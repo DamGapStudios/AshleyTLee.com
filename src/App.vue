@@ -44,5 +44,7 @@ export default {
     border-width: 2px;
     border-style: solid;
     font-size: 14pt
+    cursor: pointer;
+    box-shadow: 5px 5px 1px #5e6166;
   }
 </style>
