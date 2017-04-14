@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/views/Hello'
 import Home from '@/views/Home'
 import About from '@/views/About'
 import Messages from '@/views/Messages'
@@ -15,12 +14,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/hello',
-      name: 'Hello',
-      component: Hello
-    },
-    {
-      path: '/',
+      path: '/home',
       name: 'Home',
       component: Home
     },
