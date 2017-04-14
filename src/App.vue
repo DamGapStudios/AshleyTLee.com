@@ -18,15 +18,15 @@
 </template>
 
 <script>
-export default {
-// eslint-disable-next-line indent
-  name: 'app',
-  data () {
-    return {
-      year: new Date().getFullYear()
+  export default {
+  // eslint-disable-next-line indent
+    name: 'app',
+    data () {
+      return {
+        year: new Date().getFullYear()
+      }
     }
   }
-}
 </script>
 
 <style lang="stylus">
