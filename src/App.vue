@@ -3,9 +3,7 @@
     <v-toolbar>
       <v-toolbar-title>Logo</v-toolbar-title>
       <v-toolbar-items class="hidden-md-and-down">
-        <v-toolbar-item ripple v-for="link in this.$router.options.routes" :key="link.name">
-          <router-link class="toolbar-link" :to="link.path" tag="span">{{ link.name }}</router-link>
-        </v-toolbar-item>
+          <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="span">{{ link.name }}</router-link>
       </v-toolbar-items>
     </v-toolbar>
     <main>
@@ -25,7 +23,7 @@ export default {
   name: 'app',
   data () {
     return {
-      year: '2017'
+      year: new Date().getFullYear()
     }
   }
 }
@@ -36,5 +34,15 @@ export default {
 
   .toolbar-link {
     color white
+    padding 10px 20px
+    font-size 12pt
+  }
+
+  .toolbar-link:hover{
+    background: #a3e1e5
+    border-color: white
+    border-width: 2px;
+    border-style: solid;
+    font-size: 14pt
   }
 </style>
