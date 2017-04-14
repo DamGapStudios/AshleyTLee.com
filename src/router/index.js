@@ -6,14 +6,15 @@ import Home from '@/views/Home'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/hello',
       name: 'Hello',
       component: Hello
     },
     {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: Home
     }
