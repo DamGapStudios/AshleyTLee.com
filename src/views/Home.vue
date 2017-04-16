@@ -1,6 +1,7 @@
 <template>
   <div id="home">
-    Some Text Here
+    <br>
+    <home-canvas></home-canvas>
     <google-play-badge></google-play-badge>
     <app-store-badge></app-store-badge>
   </div>
@@ -9,6 +10,7 @@
 <script>
   import GooglePlayBadge from '../components/googlePlayBadge'
   import AppStoreBadge from '../components/appStoreBadge.vue'
+  import HomeCanvas from '../components/homeCanvas'
 
   export default {
     data () {
@@ -17,6 +19,7 @@
       }
     },
     components: {
+      HomeCanvas,
       GooglePlayBadge,
       AppStoreBadge
     }
