@@ -7,11 +7,11 @@
       </v-toolbar-items>
     </v-toolbar>
     <main>
-      <v-content class="center-stuff">
+      <v-content>
         <router-view></router-view>
       </v-content>
     </main>
-    <v-footer class="center-stuff">Copyright © {{ year }} |  Ashley T Lee Miniseries  |  Site Created By Live Long Simple & DamGap Studios</v-footer>
+    <v-footer class="center-stuff footer">Copyright © {{ year }} |  Ashley T Lee Miniseries  |  Site Created By Live Long Simple & DamGap Studios</v-footer>
   </v-app>
 </template>
 
@@ -34,27 +34,28 @@
     padding 0 3%;
   }
 
-  .toolbar-link {
-    color white
-    padding 10px 20px
-    font-size 12pt
+  .ashley-blue {
+    background: #a3e1e5;
   }
 
-    .ashley-blue {
-      background: #a3e1e5;
-    }
-
   .ashley-blue-text {
-      color: #a3e1e5;
-    }
+    color: #a3e1e5;
+  }
+
+  .toolbar-link {
+    color white
+    padding 5px 10px
+    margin 5px 10px
+    font-size 12pt
+  }
 
   .toolbar-link:hover{
     background: #a3e1e5
     border-color: white
     border-width: 2px;
     border-style: solid;
-    font-size: 14pt
     cursor: pointer;
+    margin 3px 8px
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -64,5 +65,10 @@
     border-width: 2px;
     border-style: solid;
     font-size: 14pt
+  }
+
+  .footer {
+    background white;
+    color: black
   }
 </style>
