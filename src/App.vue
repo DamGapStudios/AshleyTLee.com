@@ -1,19 +1,17 @@
 <template>
   <v-app id="app">
-    <v-toolbar>
+    <v-toolbar class="center-stuff">
       <v-toolbar-title>Logo</v-toolbar-title>
       <v-toolbar-items class="hidden-md-and-down">
-          <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="span">{{ link.name }}</router-link>
+          <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
       </v-toolbar-items>
     </v-toolbar>
     <main>
-      <v-content>
-        <v-container fluid>
-          <router-view></router-view>
-        </v-container>
+      <v-content class="center-stuff">
+        <router-view></router-view>
       </v-content>
     </main>
-    <v-footer>Copyright ©  <span>{{ year }}</span> |  Ashley T Lee Miniseries  |  Site Created By Live Long Simple & DamGap Studios</v-footer>
+    <v-footer class="center-stuff">Copyright © {{ year }} |  Ashley T Lee Miniseries  |  Site Created By Live Long Simple & DamGap Studios</v-footer>
   </v-app>
 </template>
 
@@ -32,11 +30,23 @@
 <style lang="stylus">
   @import './stylus/main'
 
+  .center-stuff{
+    padding 0 3%;
+  }
+
   .toolbar-link {
     color white
     padding 10px 20px
     font-size 12pt
   }
+
+    .ashley-blue {
+      background: #a3e1e5;
+    }
+
+  .ashley-blue-text {
+      color: #a3e1e5;
+    }
 
   .toolbar-link:hover{
     background: #a3e1e5
