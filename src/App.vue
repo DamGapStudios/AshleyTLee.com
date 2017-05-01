@@ -1,8 +1,8 @@
 <template>
   <v-app id="app">
-    <v-toolbar class="center-stuff">
+    <v-toolbar class="center-stuff elevation-0">
       <v-toolbar-title>
-        <img alt='Ashley Logo' src="./assets/ashley_logo.png">
+        <img alt='Ashley Logo' src="./assets/ashley_logo.png" style="height: 64px">
       </v-toolbar-title>
       <v-toolbar-items class="hidden-md-and-down">
           <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>

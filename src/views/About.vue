@@ -4,7 +4,7 @@
 
     <div id="info">
       <div class="ashley-blue photo">
-        <img src="../assets/logo.png" style="width: initial; height: 100%"/>
+        <img src="../assets/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
       <div class="text-block">
         <h2 class="ashley-blue-text">About</h2>
@@ -61,7 +61,7 @@
   .photo {
     height: 190px;
     width: 190px;
-    padding: 10px;
+    margin: 10px;
   }
 
   .text-block {
