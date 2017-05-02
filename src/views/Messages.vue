@@ -1,8 +1,8 @@
 <template>
-  <div id="messages">
+  <div>
     <home-canvas></home-canvas>
 
-    <div class="center-stuff">
+    <div>
       <h2 style="color: #5AD1D6">Messages</h2>
       <p>Click on an audio teaching below to listen to free teaching of the bible</p>
       <div class="audio-container">

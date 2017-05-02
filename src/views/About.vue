@@ -74,4 +74,9 @@
     padding: 5px 10px;
   }
 
+  .about-button:hover {
+    padding: 3px 8px;
+    border: 2px #F7F7F7 solid;
+  }
+
 </style>

@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div id="promo" style="text-align: center; padding: 30px">
+    <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
       Click here to hear todays FREE teachings fom Ashley T Lee!
       <button class="about-button">Listen Now</button>
     </div>
@@ -108,6 +108,12 @@
   .about-button{
     background-color: #5CD1D6;
     margin: 10px;
+  }
+
+
+  .about-button:hover{
+    border: 1px #F7F7F7 solid;
+    margin: 9px;
   }
 
 
