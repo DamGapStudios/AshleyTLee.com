@@ -1,14 +1,14 @@
 <template>
   <div style="background-color: #5CD1D6; display: flex; justify-content: center" class="center-stuff">
     <canvas id="myCanvas" width="500" height="500"></canvas>
-    <img src="../assets/canvas_book.png" id="canvasBook"/>
-    <img src="../assets/canvas_calender.png" id="canvasCalender"/>
-    <img src="../assets/canvas_computer.png" id="canvasComputer"/>
-    <img src="../assets/canvas_holder.png" id="canvasHolder"/>
-    <img src="../assets/canvas_phone.png" id="canvasPhone"/>
-    <img src="../assets/canvas_portrait.png" id="canvasPortrait"/>
-    <img src="../assets/canvas_poster.png" id="canvasPoster"/>
-    <img src="../assets/canvas_vase.png" id="canvasVase"/>
+    <!--<img src="../assets/canvas_book.png" id="canvasBook"/>-->
+    <!--<img src="../assets/canvas_calender.png" id="canvasCalender"/>-->
+    <!--<img src="../assets/canvas_computer.png" id="canvasComputer"/>-->
+    <!--<img src="../assets/canvas_holder.png" id="canvasHolder"/>-->
+    <!--<img src="../assets/canvas_phone.png" id="canvasPhone"/>-->
+    <!--<img src="../assets/canvas_portrait.png" id="canvasPortrait"/>-->
+    <!--<img src="../assets/canvas_poster.png" id="canvasPoster"/>-->
+    <!--<img src="../assets/canvas_vase.png" id="canvasVase"/>-->
   </div>
 </template>
 
