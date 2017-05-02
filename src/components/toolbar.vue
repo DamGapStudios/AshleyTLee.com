@@ -3,6 +3,10 @@
     <img alt='Ashley Logo' src="../assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
+      <img class="social" src="../assets/social_instagram.png"/>
+      <img class="social" src="../assets/social_pinterest.png"/>
+      <img class="social" src="../assets/social_twitter.png"/>
+      <img class="social" src="../assets/social_facebook.png"/>
     </div>
   </div>
 </template>
@@ -59,5 +63,9 @@
     /*font-size: 14pt*/
   }
 
+  .social{
+    height: 30px;
+    margin: auto 0;
+  }
 
 </style>

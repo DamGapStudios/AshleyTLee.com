@@ -2,6 +2,12 @@
   <div class="footer">
     <div>Copyright © {{ year }} |  Ashley T Lee Miniseries</div>
     <div>Site Created By Live Long Simple & DamGap Studios</div>
+    <div>
+      <img src="../assets/social_instagram.png"/>
+      <img src="../assets/social_pinterest.png"/>
+      <img src="../assets/social_twitter.png"/>
+      <img src="../assets/social_facebook.png"/>
+    </div>
   </div>
 </template>
 
@@ -21,5 +27,9 @@
 .footer{
   display: flex;
   justify-content: space-around;
+  margin: 10px;
 }
+  img{
+    height: 45px;
+  }
 </style>
