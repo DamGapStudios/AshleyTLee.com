@@ -77,6 +77,7 @@
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    padding-bottom: 20px;
   }
   .audio-block{
     /*padding: 20px;*/

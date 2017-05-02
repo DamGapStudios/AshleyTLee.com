@@ -1,18 +1,31 @@
 <template>
-
-    <v-container fluid="fluid">
-      <v-row>
-        <v-col xs10 offset-xs1>
-          <canvas id="myCanvas" width="200" height="100"
-                  style="border:1px solid #000000;">
-          </canvas>
-        </v-col>
-      </v-row>
-    </v-container>
+  <div style="background-color: #5CD1D6" class="center-stuff ">
+    <canvas id="myCanvas" width="200" height="200">
+    </canvas>
+  </div>
 </template>
 
 <script>
+  import {fabric} from 'fabric'
+
   export default {
+    mounted () {
+      let canvas = new fabric.Canvas('myCanvas')
+
+//       create a rectangle object
+      let rect = new fabric.Rect({
+        left: 100,
+        top: 100,
+        fill: 'red',
+        width: 20,
+        height: 20,
+        angle: 45
+      })
+
+      canvas.add(rect)
+      canvas.selection = false
+      rect.set('selectable', false)
+    },
     name: 'home-canvas',
     data () {
       return {

@@ -59,7 +59,7 @@
 
 <style scoped>
   #home {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
   }
   #about {
     display: flex;
