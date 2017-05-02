@@ -11,6 +11,8 @@
   import FooterBar from './components/footer'
   export default {
   // eslint-disable-next-line indent
+    created () {
+    },
     components: {
       FooterBar,
       ToolBar},

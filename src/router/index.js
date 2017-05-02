@@ -7,6 +7,7 @@ import App from '@/views/App'
 import Events from '@/views/Events'
 import Blog from '@/views/Blog'
 import Contact from '@/views/Contact'
+import Admin from '@/views/Admin'
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/blog',
       name: 'Blog',
       component: Blog
+    },
+    {
+      path: '/admin',
+      name: 'Admin',
+      component: Admin
     }
   ]
 })
