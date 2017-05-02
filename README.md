@@ -1,6 +1,6 @@
-# my-project
+# AshleyTLee.com
 
-> A Vue.js project
+> A website rebuild using Vue.JS
 
 ## Build Setup
 

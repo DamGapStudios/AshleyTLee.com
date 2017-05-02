@@ -2,9 +2,17 @@
   <div id="home">
     <home-canvas></home-canvas>
 
-    <div id="about" class="center-stuff">
+    <div id="about">
       <div class="text-block">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        <div style="padding: 15px 0">
+          <span style="font-weight: bold">Ashley T Lee</span> is a Christan Author and Speaker. She is currently featured on over 100 Christin radio stations across America
+          and teaches through the Kings of th Bible on the website audio teachings.
+        </div>
+        <div style="padding: 15px 0">
+          Currently booking live talked and radio sessions!
+          <br/>
+          Message her below for further details:
+        </div>
         <div style="display: block">
           <button class="about-button ashley-blue">Message Ashley</button>
           <button class="about-button ashley-blue">Read Statement of Faith</button>
@@ -64,15 +72,18 @@
   #about {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 30px 5%;
+
   }
   #promo{
     background-color: #4B7FC0;
     color: white;
+    padding: 0 5%;
   }
 
   .text-block {
     margin: 10px;
+    font-size: 14pt;
   }
 
   #app{

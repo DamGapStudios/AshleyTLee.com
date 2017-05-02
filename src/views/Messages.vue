@@ -2,9 +2,11 @@
   <div>
     <home-canvas></home-canvas>
 
-    <div>
-      <h2 style="color: #5AD1D6">Messages</h2>
-      <p>Click on an audio teaching below to listen to free teaching of the bible</p>
+    <div id="messages">
+      <div style=" margin: 40px 0">
+        <h2 style="color: #5AD1D6" >Messages</h2>
+        <p>Click on an audio teaching below to listen to free teaching of the bible</p>
+      </div>
       <div class="audio-container">
         <div class="audio-block" v-for="teaching in audioTeaching">
           <div class="audio-image"></div>
@@ -73,6 +75,10 @@
 </script>
 
 <style>
+  #messages{
+    margin: 0 5%;
+  }
+
   .audio-container {
     display: grid;
     grid-gap: 40px;
@@ -88,18 +94,28 @@
     height: 200px;
     background-color: #8FDCE0;
   }
+
+  /*.audio-image:hover{*/
+    /*border: 5px white inset;*/
+  /*}*/
   #appDownload{
-    padding: 30px 3%;
+    padding: 30px 5%;
     background-color: #F7F7F7;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .button{
     background-color: #8FDCE0;
     padding: 10px;
+    margin: 5px 10px;
     color: white;
     min-width: 150px;
+  }
+
+  .button:hover{
+    margin: 5px 10px;
+    border: 1px white solid;
   }
 </style>
