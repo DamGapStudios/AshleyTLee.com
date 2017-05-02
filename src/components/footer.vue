@@ -1,6 +1,7 @@
 <template>
   <div class="footer">
-    Copyright © {{ year }} |  Ashley T Lee Miniseries  |  Site Created By Live Long Simple & DamGap Studios
+    <div>Copyright © {{ year }} |  Ashley T Lee Miniseries</div>
+    <div>Site Created By Live Long Simple & DamGap Studios</div>
   </div>
 </template>
 
@@ -17,5 +18,8 @@
 </script>
 
 <style scoped>
-
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
 </style>
