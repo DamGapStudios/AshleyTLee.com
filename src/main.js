@@ -4,8 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index'
 import Vuetify from 'vuetify'
+import Resource from 'vue-resource'
 
 Vue.use(Vuetify)
+Vue.use(Resource)
 
 Vue.config.productionTip = false
 
