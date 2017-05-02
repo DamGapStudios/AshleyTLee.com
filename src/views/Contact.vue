@@ -14,8 +14,8 @@
           Message her below for further details:
         </div>
         <div style="display: block">
-          <button class="about-button ashley-blue">Message Ashley</button>
-          <button class="about-button ashley-blue">Read Statement of Faith</button>
+          <button class="about-button noside">Message Ashley</button>
+          <button class="about-button">Read Statement of Faith</button>
         </div>
       </div>
 
@@ -31,7 +31,7 @@
 
     <div id="contactCard">
       <h2 style="color: white">Contact</h2>
-      Email us at <a href="" style="color: white">contact@ashleytlee.com</a> or fill out the fields below and we wil be in touch
+      Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
       <div class="contact-container">
         <div class="input-contact">
           <input type="text" name="name" placeholder="Name"/>
@@ -98,6 +98,13 @@
     margin: 10px;
   }
 
+  .about-button.noside{
+    margin-left: 1px;
+  }
+  .about-button.noside:hover{
+    border: 1px #F7F7F7 solid;
+    margin: 9px 9px 9px 0px;
+  }
   .about-button{
     background-color: #5CD1D6;
     margin: 10px;
