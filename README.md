@@ -1,30 +1,16 @@
-# AshleyTLee.com
+# VueTheme
+In-Progress - WordPress theme using WP REST API and Vue.js 2 by [rtCamp](https://rtcamp.com/)
 
-> A website rebuild using Vue.JS
+## Making use of following  
+* [Vue 2](http://vuejs.org)
+* [Vue-Router](https://github.com/vuejs/vue-router)
+* [Vuex](https://github.com/vuejs/vuex)
+* [Axios](https://github.com/mzabriskie/axios)
+* [Babel](https://babeljs.io)
+* [Webpack](https://webpack.js.org/)
+* [Foundation CSS Grid](http://foundation.zurb.com/grid.html)
+* [Gulp](http://gulpjs.com/)
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Requirements 
+* [WP API Menus plugin](https://wordpress.org/plugins/wp-api-menus/)
+* WordPress Version 4.7+
