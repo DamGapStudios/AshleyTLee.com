@@ -8,18 +8,27 @@
       </div>
       <div class="text-block">
         <h2 class="ashley-blue-text">About</h2>
-        Ashley Lee has a heart for unbelievers because she didn’t have the gospel clearly presented to her.  After writing the book, “RELATIONSHIPS: How To Have Relationships God’s Way”,  she did many speaking engagements and incorporated teaching people how to share their faith. She became involved with “Way of The Master” Ministry due to her heart for the lost to come to salvation.
-
-        Her heart’s passion includes helping all who need to see relevancy of the scriptures to their needs so it will help them deal with all the stresses that are presented in life. She has a compassionate heart and tries to help people grow closer in their walk with God after they come to a saving knowledge.
-
-        Ashley is currently pursuing a Master of Arts in Apologetics degree from Southern Evangelical Seminary. She is a Mom of 4 girls so can relate to all people dealing with raising families.
+        <div style="padding: 10px 0">
+          Ashley Lee has a heart for unbelievers because she didn’t have the gospel clearly presented to her.  After writing the book,
+          “RELATIONSHIPS: How To Have Relationships God’s Way”,  she did many speaking engagements and incorporated teaching people how to
+          share their faith. She became involved with “Way of The Master” Ministry due to her heart for the lost to come to salvation.
+        </div>
+        <div style="padding: 10px 0">
+          Her heart’s passion includes helping all who need to see relevancy of the scriptures to their needs so it will
+          help them deal with all the stresses that are presented in life. She has a compassionate heart and tries to help
+          people grow closer in their walk with God after they come to a saving knowledge.
+        </div>
+        <div style="padding: 10px 0">
+          Ashley is currently pursuing a Master of Arts in Apologetics degree from Southern Evangelical Seminary. She is a
+          Mom of 4 girls so can relate to all people dealing with raising families.
+        </div>
         <button class="about-button">Message Ashley</button>
       </div>
     </div>
 
     <div id="statementOfFaith">
       <h2 class="ashley-blue-text">Statement of Faith</h2>
-      <div v-for="statement in statementsOfFaith" :key="statement.title">
+      <div v-for="statement in statementsOfFaith" :key="statement.title" class="statement">
         {{ statement.statement }} ({{statement.scripture }})
       </div>
     </div>
@@ -80,17 +89,20 @@
   }
   #info {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    margin: 0 5%;
   }
 
   #statementOfFaith {
-    margin-top: 20px;
+    margin: 20px 5% 0;
+    padding: 0 0 50px;
   }
 
   .photo {
     height: 190px;
     width: 190px;
     margin: 10px;
+    vertical-align: top;
   }
 
   .text-block {
@@ -107,6 +119,10 @@
   .about-button:hover {
     padding: 3px 8px;
     border: 2px #F7F7F7 solid;
+  }
+
+  .statement{
+    padding: 10px;
   }
 
 </style>
