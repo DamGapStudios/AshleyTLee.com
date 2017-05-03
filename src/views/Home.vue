@@ -6,7 +6,7 @@
       <div class="text-block">
         <div style="padding: 15px 0">
           <span style="font-weight: bold">Ashley T Lee</span> is a Christan Author and Speaker. She is currently featured on over 100 Christin radio stations across America
-          and teaches through the Kings of th Bible on the website audio teachings.
+          and teaches through the Kings of the Bible on the website audio teachings.
         </div>
         <div style="padding: 15px 0">
           Currently booking live talked and radio sessions!
