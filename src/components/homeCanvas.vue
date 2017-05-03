@@ -13,7 +13,7 @@
 </template>
 
 <script>
-  import {fabric} from 'fabric'
+  import fabric from 'fabric/dist/fabric'
 
   export default {
     mounted () {

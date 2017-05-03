@@ -49,7 +49,7 @@
 </template>
 
 <script>
-  import HomeCanvas from '../components/homeCanvas'
+  import HomeCanvas from '../components/homeCanvas.vue'
   export default {
     name: 'contact',
     data () {

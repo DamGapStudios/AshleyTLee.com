@@ -28,7 +28,7 @@
 </template>
 
 <script>
-  import HomeCanvas from '../components/homeCanvas'
+  import HomeCanvas from '../components/homeCanvas.vue'
   export default {
     components: {HomeCanvas},
     name: 'messages',
