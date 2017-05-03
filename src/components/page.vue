@@ -4,7 +4,7 @@
 
 <template>
 
-<transition name="slide-fade">
+<transition name="slide-fade" style="background-color: #4bd963">
 
 	<div class="row rt-main" v-if="loaded ==='true'">
 

@@ -8,13 +8,14 @@
 			<div class="column large-10 medium-10 small-10">
 
 				<router-link :to="{ name: 'home'}" class="site-name"> {{ site_name }} </router-link>
+				Home
 
 			</div>
 
 			<div class="column large-2 medium-2 small-2 end">
 
 				<div id="nav-icon1" v-on:click="toggleMenu" v-bind:class="{open: isActive}">
-					<span></span>
+					<span>Item One</span>
 					<span></span>
 					<span></span>
 				</div>
@@ -25,6 +26,7 @@
 						<li v-for="item in menus" v-if="item.type != 'custom'">
 							 <router-link :to="{ name: 'page', params: { name: getUrlName( item.url ) }}"> {{ item.title }} </router-link>
 						</li>
+						<li>Some Text</li>
 
 					</ul>
 
