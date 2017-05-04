@@ -2,7 +2,7 @@
 
 function rest_theme_scripts() {
 
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+//	wp_enqueue_style( 'style', get_stylesheet_uri() );
 
 	$base_url  = esc_url_raw( home_url() );
 	$base_path = rtrim( parse_url( $base_url, PHP_URL_PATH ), '/' );
