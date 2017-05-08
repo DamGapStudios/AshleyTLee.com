@@ -22,20 +22,6 @@ Vue.use(VueProgressiveImage, {
 Vue.config.debug = true;
 Vue.config.devTools = true;
 
-//Define vuex store
-// const store = new Vuex.Store({
-// 	state: {
-// 		title: ''
-// 	},
-// 	mutations: {
-// 		rtChangeTitle(state, value) {
-// 			// mutate state
-// 			state.title = value;
-// 			document.title = (state.title ?state. title + ' - ' : '') + rtwp.site_name;
-// 		}
-// 	}
-// })
-
 //Create instatnce of main component
 new Vue({
     el: '#app',

@@ -38,4 +38,13 @@
     background: white;
     color: black
   }
+
+  a {
+    cursor: pointer;
+    text-align: center;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
 </style>

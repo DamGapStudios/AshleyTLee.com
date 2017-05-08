@@ -22,7 +22,7 @@
           Ashley is currently pursuing a Master of Arts in Apologetics degree from Southern Evangelical Seminary. She is a
           Mom of 4 girls so can relate to all people dealing with raising families.
         </div>
-        <button class="about-button">Message Ashley</button>
+        <a href="/" class="about-button">Message Ashley</a>
       </div>
     </div>
 
@@ -114,11 +114,12 @@
     color: white;
     padding: 5px 10px;
     background-color: #8FDCE0;
+    max-width: 150px;
   }
 
   .about-button:hover {
-    padding: 3px 8px;
     border: 2px #F7F7F7 solid;
+    margin: 3px 8px;;
   }
 
   .statement{

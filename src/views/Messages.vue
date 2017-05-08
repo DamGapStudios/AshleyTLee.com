@@ -21,7 +21,7 @@
         Like what you hear? Download our FREE app,
         now available on iTunes and Google Play
       </div>
-      <button class="button">Message Ashley</button>
+      <a class="button">Message Ashley</a>
     </div>
 
   </div>
@@ -106,7 +106,7 @@
     justify-content: center;
   }
 
-  .button{
+  a {
     background-color: #8FDCE0;
     padding: 10px;
     margin: 5px 10px;
@@ -114,8 +114,9 @@
     min-width: 150px;
   }
 
-  .button:hover{
-    margin: 5px 10px;
+  a:hover{
+    margin: 4px 9px;
     border: 1px white solid;
   }
+
 </style>
