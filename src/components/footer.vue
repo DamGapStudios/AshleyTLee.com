@@ -3,10 +3,10 @@
     <div>Copyright © {{ year }} |  Ashley T Lee Miniseries</div>
     <div>Site Created By Live Long Simple & DamGap Studios</div>
     <div>
-      <img src="../assets/social_instagram.png"/>
-      <img src="../assets/social_pinterest.png"/>
-      <img src="../assets/social_twitter.png"/>
-      <img src="../assets/social_facebook.png"/>
+      <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/social_instagram.png"/>
+      <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/social_pinterest.png"/>
+      <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/social_twitter.png"/>
+      <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/social_facebook.png"/>
     </div>
   </div>
 </template>

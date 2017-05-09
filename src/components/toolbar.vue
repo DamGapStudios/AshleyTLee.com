@@ -1,10 +1,10 @@
 <template>
   <div class="navbar">
-    <img alt='Ashley Logo' :src="imageLogo" style="height: 80px; padding-left: 30px">
+    <img alt='Ashley Logo' src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
       <div  class="social">
-        <social-instagram></social-instagram>
+       <social-instagram></social-instagram>
       </div>
     </div>
   </div>
@@ -69,9 +69,7 @@
   }
 
   .social{
-    height: 30px;
-    margin: auto 0;
-    fill: white;
+
   }
 
 </style>
