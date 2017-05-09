@@ -1,20 +1,22 @@
 <template>
   <div class="navbar">
-    <img alt='Ashley Logo' src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
+    <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
-      <div  class="social">
-       <social-instagram></social-instagram>
-      </div>
+      <social-instagram class="social"></social-instagram>
+      <social-facebook class="social"></social-facebook>
     </div>
   </div>
 </template>
 
 <script>
     import SocialInstagram from "./icons/social_instagram.vue";
+    import SocialFacebook from "./icons/social_facebook.vue";
 
   export default {
-      components: {SocialInstagram},
+      components: {
+          SocialFacebook,
+          SocialInstagram},
       computed: {
           imageLogo: function () {
               return require('../assets/ashley_logo.png')
@@ -68,8 +70,9 @@
     /*font-size: 14pt*/
   }
 
-  .social{
-
+  .social {
+    fill: white;
+    margin: auto 0;
   }
 
 </style>
