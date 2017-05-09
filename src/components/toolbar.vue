@@ -1,19 +1,25 @@
 <template>
   <div class="navbar">
-    <img alt='Ashley Logo' src="../assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
+    <img alt='Ashley Logo' :src="imageLogo" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
-      <img class="social" src="../assets/social_instagram.png"/>
-      <img class="social" src="../assets/social_pinterest.png"/>
-      <img class="social" src="../assets/social_twitter.png"/>
-      <img class="social" src="../assets/social_facebook.png"/>
+      <div  class="social">
+        <social-instagram></social-instagram>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+    import SocialInstagram from "./icons/social_instagram.vue";
 
   export default {
+      components: {SocialInstagram},
+      computed: {
+          imageLogo: function () {
+              return require('../assets/ashley_logo.png')
+          }
+      },
     name: 'tool-bar',
     data () {
       return {
@@ -65,6 +71,7 @@
   .social{
     height: 30px;
     margin: auto 0;
+    fill: white;
   }
 
 </style>

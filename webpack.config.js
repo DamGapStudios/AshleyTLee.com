@@ -28,15 +28,18 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: '[name].[ext]'
         }
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
-    }
+      'vue$': 'vue/dist/vue.esm.js',
+          'src': path.resolve(__dirname, '../src'),
+          'assets': path.resolve(__dirname, '../src/assets'),
+          'components': path.resolve(__dirname, '../src/components')
+      }
   },
   devServer: {
     historyApiFallback: true,
