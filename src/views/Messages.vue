@@ -74,7 +74,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   #messages{
     margin: 0 5%;
   }
