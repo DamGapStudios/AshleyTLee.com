@@ -4,7 +4,7 @@
 
     <div id="info">
       <div class="ashley-blue photo">
-        <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
+        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
       <div class="text-block">
         <h2 class="ashley-blue-text">About</h2>
