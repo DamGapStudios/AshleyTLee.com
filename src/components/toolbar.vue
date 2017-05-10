@@ -23,11 +23,6 @@
           SocialTwitter,
           SocialFacebook,
           SocialInstagram},
-      computed: {
-          imageLogo: function () {
-              return require('../assets/ashley_logo.png')
-          }
-      },
     name: 'tool-bar',
     data () {
       return {
