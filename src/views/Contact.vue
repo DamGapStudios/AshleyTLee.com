@@ -20,7 +20,7 @@
       </div>
 
       <div class="ashley-blue photo">
-        <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_portrait.png" style="width: initial; height: 100%"/>
+        <img src="/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
     </div>
 

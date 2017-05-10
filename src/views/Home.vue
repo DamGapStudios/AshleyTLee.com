@@ -20,7 +20,7 @@
       </div>
 
       <div class="ashley-blue photo">
-        <img src="http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_portrait.png" style="width: initial; height: 100%"/>
+        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
     </div>
 
@@ -32,11 +32,11 @@
     <div id="app" class="center-stuff">
 
         <div class="app app-image">
-          <img src='http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/app_picture.png'/>
+          <img src='wp-content/themes/AshleyTLeeTheme/dist/app_picture.png'/>
         </div>
         <div class="app app-link">
           <a href='https://itunes.apple.com/us/app/ashley-t-lee/id998172757?ls=1&mt=8' class="image">
-            <img style='width: 155px; padding: 10px' class="app app-store" alt='Get it on the App Store' src='http://ashleytlee.dev/wp-content/themes/AshleyTLeeTheme/dist/assets/Download_on_the_App_Store_Badge_US-UK_135x40.svg'/>
+            <img style='width: 155px; padding: 10px' class="app app-store" alt='Get it on the App Store' src='wp-content/themes/AshleyTLeeTheme/dist/Download_on_the_App_Store_Badge_US-UK_135x40.svg'/>
           </a>
 
           <a href='https://play.google.com/store/apps/details?id=com.ashleytlee.AshleyTLee&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="image">

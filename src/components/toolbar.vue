@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
+    <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
       <social-giving class="social"></social-giving>
