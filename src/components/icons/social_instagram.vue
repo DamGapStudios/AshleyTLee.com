@@ -2,15 +2,6 @@
     <a href="http://instagram.com">
         <svg version="1.1" id="instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 728.2 779.5" style="enable-background:new 0 0 728.2 779.5;" xml:space="preserve" class="icon">
-            <style type="text/css">
-                .st0{fill:#898989;}
-                .st1{fill:#FFFFFF;}
-                .st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:11;stroke-miterlimit:10;}
-                .st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-                .st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
-                .st5{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-                .st6{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
-            </style>
             <g>
                 <g>
                     <path class="st1" d="M72.6,484.7c0-21.6,1.7-43.4-0.4-64.8c-4.1-41.5,7.6-81.5,9-122.3c0.4-11.7-1.8-23.2,1-35.2

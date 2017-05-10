@@ -4,15 +4,6 @@
 		<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 		<svg version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 728.2 779.5" style="enable-background:new 0 0 728.2 779.5;" xml:space="preserve" class="icon">
-<style type="text/css">
-	.st0{fill:#898989;}
-	.st1{fill:#FFFFFF;}
-	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:11;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st6{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
-</style>
 <g>
 	<path class="st1" d="M97.3,418.8c-1.8-43.5-4.4-86.9-5.2-130.4c-0.5-23.3,2.1-46.6,2.8-70c0.3-8.8,0-17.7-1.3-26.4
 		c-3.1-20.4,6-38.8,19.7-48.9c12.2-9,28.9-15,46-18.3c32.4-6.1,64.1,0.6,96-0.6c14.4-0.5,28.8-4.1,43.2-4.5
