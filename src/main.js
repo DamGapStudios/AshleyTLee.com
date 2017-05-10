@@ -1,20 +1,32 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-import Vue from 'vue'
-import App from './App'
-import router from './router/index'
-import Vuetify from 'vuetify'
-import Resource from 'vue-resource'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuex from 'vuex';
+import VueProgressiveImage from 'progressive-image/dist/vue';
 
-Vue.use(Vuetify)
-Vue.use(Resource)
+import App from './App.vue';
+import router from './router/index';
+import Resource from 'vue-resource';
 
-Vue.config.productionTip = false
+Vue.use(Resource);
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App }
+
+// Vue.prototype.$http = axios;
+//Use vue route
+
+Vue.use( Vuex )
+Vue.use( VueRouter )
+Vue.use(VueProgressiveImage, {
+	removePreview: true
 })
+
+Vue.config.debug = true;
+Vue.config.devTools = true;
+
+//Create instatnce of main component
+new Vue({
+    el: '#app',
+    router,
+    template: '<App/>',
+    components: { App }
+})
+

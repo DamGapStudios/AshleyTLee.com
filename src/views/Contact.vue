@@ -14,24 +14,24 @@
           Message her below for further details:
         </div>
         <div style="display: block">
-          <button class="about-button noside">Message Ashley</button>
-          <button class="about-button">Read Statement of Faith</button>
+          <a class="about-button noside">Message Ashley</a>
+          <a class="about-button">Read Statement of Faith</a>
         </div>
       </div>
 
       <div class="ashley-blue photo">
-        <img src="../assets/ashley_portrait.png" style="width: initial; height: 100%"/>
+        <img src="/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
     </div>
 
     <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
       Click here to hear todays FREE teachings fom Ashley T Lee!
-      <button class="about-button">Listen Now</button>
+      <a class="about-button">Listen Now</a>
     </div>
 
     <div id="contactCard">
-      <h2 style="color: white">Contact</h2>
-      Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
+      <h2 style="color: white; margin: 0; padding: 10px">Contact</h2>
+      Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
       <div class="contact-container">
         <div class="input-contact">
           <input type="text" name="name" placeholder="Name"/>
@@ -43,13 +43,13 @@
       <div>
         <textarea name="message" placeholder="Message"></textarea>
       </div>
-      <button class="submit">Submit</button>
+      <a class="submit">Submit</a>
     </div>
   </div>
 </template>
 
 <script>
-  import HomeCanvas from '../components/homeCanvas'
+  import HomeCanvas from '../components/homeCanvas.vue'
   export default {
     name: 'contact',
     data () {
@@ -128,6 +128,12 @@
   }
   input{
     padding: 10px;
+    -webkit-appearance: textfield;
+    background-color: transparent;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    border: 0;
 
   }
   input:focus{
@@ -139,6 +145,16 @@
     margin: 10px 0;
     padding: 10px;
     color: white;
+
+    -webkit-appearance: textarea;
+    background-color: transparent;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    flex-direction: column;
+    resize: none;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
   textarea:focus{
     outline: none;

@@ -1,14 +1,14 @@
 <template>
-  <v-app id="app">
+  <div id="app">
     <tool-bar></tool-bar>
     <router-view></router-view>
     <footer-bar></footer-bar>
-  </v-app>
+  </div>
 </template>
 
 <script>
-  import ToolBar from './components/toolbar'
-  import FooterBar from './components/footer'
+  import ToolBar from './components/toolbar.vue'
+  import FooterBar from './components/footer.vue'
   export default {
   // eslint-disable-next-line indent
     created () {
@@ -24,8 +24,7 @@
   }
 </script>
 
-<style lang="stylus">
-  @import './stylus/main'
+<style>
 
   .ashley-blue {
     background: #a3e1e5;
@@ -36,7 +35,16 @@
   }
 
   .footer {
-    background white;
+    background: white;
     color: black
+  }
+
+  a {
+    cursor: pointer;
+    text-align: center;
+  }
+
+  a:link {
+    text-decoration: none;
   }
 </style>

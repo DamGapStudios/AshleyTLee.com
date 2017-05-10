@@ -1,19 +1,28 @@
 <template>
   <div class="navbar">
-    <img alt='Ashley Logo' src="../assets/ashley_logo.png" style="height: 80px; padding-left: 30px">
+    <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
     <div class="toolbar-container">
       <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
-      <img class="social" src="../assets/social_instagram.png"/>
-      <img class="social" src="../assets/social_pinterest.png"/>
-      <img class="social" src="../assets/social_twitter.png"/>
-      <img class="social" src="../assets/social_facebook.png"/>
+      <social-giving class="social"></social-giving>
+      <social-instagram class="social"></social-instagram>
+      <social-facebook class="social"></social-facebook>
+      <social-twitter class="social"></social-twitter>
     </div>
   </div>
 </template>
 
 <script>
+    import SocialInstagram from "./icons/social_instagram.vue";
+    import SocialFacebook from "./icons/social_facebook.vue";
+    import SocialTwitter from "./icons/social_twitter.vue";
+    import SocialGiving from "./icons/social_giving.vue";
 
   export default {
+      components: {
+          SocialGiving,
+          SocialTwitter,
+          SocialFacebook,
+          SocialInstagram},
     name: 'tool-bar',
     data () {
       return {
@@ -62,8 +71,8 @@
     /*font-size: 14pt*/
   }
 
-  .social{
-    height: 30px;
+  .social {
+    fill: white;
     margin: auto 0;
   }
 
