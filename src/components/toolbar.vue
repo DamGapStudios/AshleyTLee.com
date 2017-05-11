@@ -37,6 +37,7 @@
     background-color: #A3D9D9;
     padding: 5px;
     height: 90px;
+
   }
   .toolbar-container{
     display: flex;
