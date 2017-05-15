@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ post.title.rendered }}
+        {{ post.title.rendered }} by {{ post.author }}
         <div v-html="post.content.rendered"></div>
         Some Text here
     </div>
@@ -9,9 +9,11 @@
 <script>
     export default {
         name: 'blog-post',
-        prop: ['blogPost'],
-        computed: {
+        props: ['post'],
+        created () {
+            console.log(this.post)
         }
+
     }
 </script>
 

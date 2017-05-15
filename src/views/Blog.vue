@@ -1,12 +1,12 @@
 <template>
   <div id="blog">
     <h1 class="ashley-blue-text">Blog</h1>
-    <!--<blog-post v-for="post in blog_posts" :blog-post="post"></blog-post>-->
-    <div v-for="post in blog_posts" class="blogContent">
-      {{ post.title.rendered }}
-      <div v-html="post.content.rendered">
-      </div>
-    </div>
+    <blog-post class="blogContent" v-for="post in blog_posts" :post="post"></blog-post>
+    <!--<div v-for="post in blog_posts" class="blogContent">-->
+      <!--{{ post.title.rendered }}-->
+      <!--<div v-html="post.content.rendered">-->
+      <!--</div>-->
+    <!--</div>-->
   </div>
 </template>
 
@@ -17,7 +17,7 @@
       created () {
       this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts').then(response => {
         this.blog_posts = response.body
-        console.log(this.blog_posts)
+//        console.log(this.blog_posts)
       }, response => {})
     },
     name: 'blog',
