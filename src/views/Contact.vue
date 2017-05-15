@@ -30,7 +30,7 @@
     </div>
 
     <div id="contactCard">
-      <h2 style="color: white; margin: 0; padding: 10px">Contact</h2>
+      <h2 style="color: white; margin: 0; padding: 10px 10px 10px 0px">Contact</h2>
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
       <div class="contact-container">
         <div class="input-contact">
@@ -40,10 +40,10 @@
           <input type="email" name="email" placeholder="Email"/>
         </div>
       </div>
-      <div>
+      <div class="contact-container">
         <textarea name="message" placeholder="Message"></textarea>
       </div>
-      <a class="submit">Submit</a>
+      <button class="submit">Submit</button>
     </div>
   </div>
 </template>
@@ -77,6 +77,7 @@
   }
   #contactCard{
     padding: 0 5%;
+    height: auto;
     background-color: #8FDCE0;
     color: white;
   }
@@ -89,8 +90,22 @@
     background-color: #5CD1D6;
     width: 100%;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 1px 1px 31px 1px;
     padding: 10px;
+    border: none;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    font-family: Helvetica Neue, Helvetica, Arial;
+  }
+
+  .submit:hover{
+    margin: 0 0 30px 0;
+    border: 1px #F7F7F7 solid;
   }
   .photo {
     height: 190px;
@@ -111,7 +126,6 @@
     padding: 5px 10px ;
     color: white;
   }
-
 
   .about-button:hover{
     border: 1px #F7F7F7 solid;
