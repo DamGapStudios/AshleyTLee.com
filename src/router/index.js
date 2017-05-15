@@ -7,7 +7,8 @@ import App from '../views/App.vue';
 import Events from '../views/Events.vue';
 import Blog from '../views/Blog.vue';
 import Contact from '../views/Contact.vue';
-Vue.use(Router)
+// import BlogTest from '../views/BlogTest.vue';
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -43,7 +44,7 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/blog',
+      path: '/blogpage',
       name: 'Blog',
       component: Blog
     }
