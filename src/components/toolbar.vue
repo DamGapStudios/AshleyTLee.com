@@ -61,6 +61,7 @@
     border-style: solid;
     cursor: pointer;
     margin: 2px 12px;
+    box-shadow: 1px 1px 15px 1px #fff ;
   }
 
   .router-link-active{
