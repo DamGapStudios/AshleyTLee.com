@@ -93,6 +93,16 @@
         canvas.renderAll()
       });
 
+      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_iphone.png', function (iPhone) {
+        iPhone.setLeft(600);
+        iPhone.setTop(355);
+        iPhone.scale(.5);
+        canvas.add(iPhone);
+// eslint-disable-next-line quotes
+        console.log('Added iPhone');
+        canvas.renderAll()
+      });
+
     },
     name: 'home-canvas',
     data () {
