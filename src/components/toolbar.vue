@@ -50,7 +50,7 @@
   .toolbar-link {
     color: white;
     padding: 5px 10px;
-    margin: 4px 4px;
+    margin: 4px 14px;
     font-size: 12pt;
   }
 
@@ -60,7 +60,7 @@
     border-width: 2px;
     border-style: solid;
     cursor: pointer;
-    margin: 2px 2px;
+    margin: 2px 12px;
   }
 
   .router-link-active{
@@ -68,7 +68,7 @@
     border-color: white;
     border-width: 2px;
     border-style: solid;
-    margin: 2px 2px;
+    margin: 2px 12px;
     /*font-size: 14pt*/
   }
 

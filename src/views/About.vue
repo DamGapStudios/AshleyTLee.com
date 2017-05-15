@@ -115,11 +115,12 @@
     padding: 5px 10px;
     background-color: #8FDCE0;
     max-width: 150px;
+    margin: 2px;
   }
 
   .about-button:hover {
     border: 2px #F7F7F7 solid;
-    margin: 3px 8px;;
+    margin: 0;
   }
 
   .statement{

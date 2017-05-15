@@ -118,6 +118,7 @@
 
   .about-button.noside{
     margin-left: 1px;
+    margin-right: 20px;
   }
   .about-button.noside:hover{
     border: 1px #F7F7F7 solid;
