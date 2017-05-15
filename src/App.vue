@@ -32,6 +32,7 @@
 
   .ashley-blue-text {
     color: #a3e1e5;
+    margin: 0px 5% 10px 5%;
   }
 
   .footer {

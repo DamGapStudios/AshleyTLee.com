@@ -1,5 +1,6 @@
 <template>
   <div id="template">
+    <h1 class="ashley-blue-text">App</h1>
 
   </div>
 </template>

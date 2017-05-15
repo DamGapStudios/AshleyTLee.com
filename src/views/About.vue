@@ -1,13 +1,13 @@
 <template>
   <div id="about">
-    <home-canvas></home-canvas>
+
+    <h1 class="ashley-blue-text">About</h1>
 
     <div id="info">
       <div class="ashley-blue photo">
         <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
       </div>
       <div class="text-block">
-        <h2 class="ashley-blue-text">About</h2>
         <div style="padding: 10px 0">
           Ashley Lee has a heart for unbelievers because she didn’t have the gospel clearly presented to her.  After writing the book,
           “RELATIONSHIPS: How To Have Relationships God’s Way”,  she did many speaking engagements and incorporated teaching people how to

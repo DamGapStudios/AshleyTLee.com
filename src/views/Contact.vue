@@ -1,6 +1,7 @@
 <template>
   <div id="contact">
-    <home-canvas></home-canvas>
+
+    <h1 class="ashley-blue-text">Contact</h1>
 
     <div id="about">
       <div class="text-block">
@@ -64,6 +65,7 @@
 </script>
 
 <style scoped>
+
   #about {
     display: flex;
     align-items: center;

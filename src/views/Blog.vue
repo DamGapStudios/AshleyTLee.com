@@ -1,7 +1,8 @@
 <template>
   <div id="blog">
+    <h1 class="ashley-blue-text">Blog</h1>
     <!--<blog-post v-for="post in blog_posts" :blog-post="post"></blog-post>-->
-    <div v-for="post in blog_posts">
+    <div v-for="post in blog_posts" class="blogContent">
       {{ post.title.rendered }}
       <div v-html="post.content.rendered">
       </div>
@@ -30,5 +31,7 @@
 </script>
 
 <style>
-
+  .blogContent {
+    padding: 0 5%;
+  }
 </style>
