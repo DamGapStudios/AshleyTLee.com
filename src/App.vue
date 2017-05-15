@@ -47,4 +47,8 @@
   a:link {
     text-decoration: none;
   }
+
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 </style>

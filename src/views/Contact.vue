@@ -25,7 +25,7 @@
     </div>
 
     <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
-      Click here to hear todays FREE teachings fom Ashley T Lee!
+      Click here to hear today's FREE teachings fom Ashley T Lee!
       <a class="about-button">Listen Now</a>
     </div>
 
