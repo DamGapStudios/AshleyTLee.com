@@ -49,7 +49,7 @@
 
   .blur{
     background-color: #a8dbdf;
-    filter: blur(2px);
+    filter: blur(0px);
     z-index: 2;
     position:fixed;
     top:0;
