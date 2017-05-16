@@ -69,6 +69,24 @@
           console.log("Name = " + this.name);
           console.log("Email = " + this.email);
           console.log("Message = " + this.message);
+
+            this.$http.post('http://ashleytlee.dev/wp-json/ccf/v1/forms/', {id: '17'}).then(response => {
+
+                // get status
+                response.status;
+
+                // get status text
+                response.statusText;
+
+                // get 'Expires' header
+                response.headers.get('Expires');
+
+                // get body data
+                this.someData = response.body;
+
+            }, response => {
+                // error callback
+            });
         }
       }
   }
