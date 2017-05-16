@@ -35,16 +35,16 @@
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
       <div class="contact-container">
         <div class="input-contact">
-          <input type="text" name="name" placeholder="Name"/>
+          <input type="text" name="name" placeholder="Name" v-model="name"/>
         </div>
         <div class="input-contact">
-          <input type="email" name="email" placeholder="Email"/>
+          <input type="email" name="email" placeholder="Email" v-model="email"/>
         </div>
       </div>
       <div class="contact-container">
-        <textarea name="message" placeholder="Message"></textarea>
+        <textarea name="message" placeholder="Message" v-model="message"></textarea>
       </div>
-      <button class="submit">Submit</button>
+      <button class="submit" v-on:click="sendContact">Submit</button>
     </div>
   </div>
 </template>
@@ -55,12 +55,22 @@
     name: 'contact',
     data () {
       return {
-        title: 'Contact'
+          title: 'Contact',
+          name: '',
+          email: '',
+          message: ''
       }
     },
     components: {
       HomeCanvas
-    }
+    },
+      methods: {
+        sendContact: function() {
+          console.log("Name = " + this.name);
+          console.log("Email = " + this.email);
+          console.log("Message = " + this.message);
+        }
+      }
   }
 </script>
 
@@ -150,6 +160,7 @@
     user-select: text;
     cursor: auto;
     border: 0;
+    color: white
 
   }
   input:focus{
