@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #A8DBDF; display: flex; justify-content: center" class="center-stuff">
+  <div style="background-color: #8ad0d5; display: flex; justify-content: center" class="center-stuff">
     <canvas id="myCanvas" width="1143px" height="450px"></canvas>
   </div>
 </template>
