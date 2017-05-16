@@ -8,7 +8,7 @@
       <div class="audio-container">
         <div class="audio-block" v-for="teaching in audioTeaching">
           <div class="audio-image"></div>
-          {{ teaching.author }}<br/>
+          {{ teaching.title.rendered}}<br/>
           {{ teaching.date }}
         </div>
       </div>
@@ -28,45 +28,19 @@
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
   export default {
+      created () {
+          this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
+              this.audioTeaching = response.body;
+//        console.log(this.blog_posts)
+          }, response => {
+          })
+      },
     components: {HomeCanvas},
     name: 'messages',
     data () {
       return {
         title: 'Messages',
-        audioTeaching: [
-          {
-            author: 'Daniel',
-            date: 'January 1 2017'
-          },
-          {
-            author: 'Jeremiah',
-            date: 'May 1 2016'
-          },
-          {
-            author: 'Isaiah',
-            date: 'June 27 2016'
-          },
-          {
-            author: 'Isaiah',
-            date: 'June 27 2016'
-          },
-          {
-            author: 'Daniel',
-            date: 'January 1 2017'
-          },
-          {
-            author: 'Jeremiah',
-            date: 'May 1 2016'
-          },
-          {
-            author: 'Isaiah',
-            date: 'June 27 2016'
-          },
-          {
-            author: 'Isaiah',
-            date: 'June 27 2016'
-          }
-        ]
+        audioTeaching: []
       }
     }
   }
