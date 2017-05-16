@@ -90,7 +90,7 @@
 
 //            $.ajax({
 //                type: "POST",
-//                url: "php/form-process.php",
+//                url: "php/form-mail.php",
 //                data: "name=" + name + "&email=" + email + "&message=" + message,
 //                success : function(text){
 //                    if (text == "success"){
