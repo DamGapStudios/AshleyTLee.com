@@ -2,6 +2,16 @@
   <div id="app-page">
     <h1 class="ashley-blue-text">{{title}}</h1>
 
+    <div class="teaching-container">
+
+        <div class="teaching-block" v-for="teaching in teachings">
+          <div class="teaching-image"></div>
+          {{ teaching.author }}<br/>
+          {{ teaching.date }}
+        </div>
+
+    </div>
+
     <div id="app" class="center-stuff">
 
       <div class="app app-image">
@@ -29,12 +39,117 @@
     name: 'app',
     data () {
       return {
-        title: 'App'
+          title: 'App',
+          teachings: [
+              {
+                  author: 'Daniel',
+                  date: 'January 1 2017'
+              },
+              {
+                  author: 'Jeremiah',
+                  date: 'May 1 2016'
+              },
+              {
+                  author: 'Isaiah',
+                  date: 'June 27 2016'
+              },
+              {
+                  author: 'Isaiah',
+                  date: 'June 27 2016'
+              },
+              {
+                  author: 'Daniel',
+                  date: 'January 1 2017'
+              },
+              {
+                  author: 'Jeremiah',
+                  date: 'May 1 2016'
+              },
+              {
+                  author: 'Isaiah',
+                  date: 'June 27 2016'
+              },
+              {
+                  author: 'Isaiah',
+                  date: 'June 27 2016'
+              }
+          ]
       }
     }
   }
 </script>
 
-<style>
+<style scoped>
+
+  #app{
+    background-color: #8FDCE0;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .app {
+    /*float: left;*/
+
+    display:inline-block;
+  }
+
+  .app-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .app-store {
+    width: inherit;
+  }
+
+  .about-button{
+    background-color: #5CD1D6;
+    margin: 10px;
+    text-align: center;
+  }
+
+
+  .about-button:hover{
+    border: 1px #F7F7F7 solid;
+    margin: 9px;
+  }
+
+
+  a {
+    padding: 5px 10px ;
+    color: white;
+  }
+
+  .image {
+    color: white;
+    background-color: transparent;
+    padding:0;
+    margin:0;
+    min-width: 0;
+  }
+
+  .image:hover {
+    border: none;
+  }
+
+  .teaching-container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    padding-bottom: 20px;
+    margin: 0 5%;
+  }
+  .teaching-block{
+    /*padding: 20px;*/
+    font-size: 24pt;
+  }
+  .teaching-image{
+    width: 200px;
+    height: 200px;
+    background-color: #8FDCE0;
+  }
 
 </style>
