@@ -30,7 +30,7 @@
       <a class="about-button">Listen Now</a>
     </div>
 
-    <div id="contactCard">
+    <form action="/wp-content/themes/AshleyTLeeTheme/dist/process.php" method="POST" id="contactCard">
       <h2 style="color: white; margin: 0; padding: 10px 10px 10px 0px">Contact</h2>
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
       <div class="contact-container">
@@ -45,7 +45,7 @@
         <textarea name="message" placeholder="Message" v-model="message"></textarea>
       </div>
       <button class="submit" v-on:click="sendContact">Submit</button>
-    </div>
+    </form>
   </div>
 </template>
 
@@ -70,7 +70,7 @@
           console.log("Email = " + this.email);
           console.log("Message = " + this.message);
 
-            this.$http.post('http://ashleytlee.dev/wp-json/ccf/v1/forms/', {id: '17'}).then(response => {
+            this.$http.post('process.php').then(response => {
 
                 // get status
                 response.status;
@@ -87,6 +87,17 @@
             }, response => {
                 // error callback
             });
+
+//            $.ajax({
+//                type: "POST",
+//                url: "php/form-process.php",
+//                data: "name=" + name + "&email=" + email + "&message=" + message,
+//                success : function(text){
+//                    if (text == "success"){
+//                        formSuccess();
+//                    }
+//                }
+//            });
         }
       }
   }
