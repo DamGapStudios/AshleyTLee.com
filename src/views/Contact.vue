@@ -196,6 +196,7 @@
     outline: none;
   }
   textarea {
+    font-family: Helvetica Neue, Helvetica, Arial;
     border: 3px white solid;
     width: 100%;
     margin: 10px 0;
