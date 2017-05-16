@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
 
-    <h1 class="ashley-blue-text">Contact</h1>
+    <h1 class="ashley-blue-text">{{title}}</h1>
 
     <div id="about">
       <div class="text-block">

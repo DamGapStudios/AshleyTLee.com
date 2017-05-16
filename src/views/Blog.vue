@@ -1,6 +1,6 @@
 <template>
   <div id="blog">
-    <h1 class="ashley-blue-text">Blog</h1>
+    <h1 class="ashley-blue-text">{{title}}</h1>
     <blog-post v-for="post in blog_posts" :post="post" class="blogContent"></blog-post>
   </div>
 </template>
@@ -17,7 +17,8 @@
     },
     data () {
       return {
-        blog_posts: []
+          title: 'Blog',
+          blog_posts: []
       }
     }
   }

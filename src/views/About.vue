@@ -1,7 +1,7 @@
 <template>
   <div id="about">
 
-    <h1 class="ashley-blue-text">About</h1>
+    <h1 class="ashley-blue-text">{{title}}</h1>
 
     <div id="info">
       <div class="ashley-blue photo">
@@ -41,7 +41,7 @@
   export default {
     data () {
       return {
-        title: 'about',
+        title: 'About',
         statementsOfFaith: [
           {
             title: 'Some Title',

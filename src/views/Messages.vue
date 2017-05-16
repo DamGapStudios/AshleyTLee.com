@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="ashley-blue-text">Messages</h1>
+    <h1 class="ashley-blue-text">{{title}}</h1>
     <div id="messages">
       <div style=" margin: 40px 0">
         <p>Click on an audio teaching below to listen to free teaching of the bible</p>
@@ -32,7 +32,7 @@
     name: 'messages',
     data () {
       return {
-        title: 'messages',
+        title: 'Messages',
         audioTeaching: [
           {
             author: 'Daniel',
