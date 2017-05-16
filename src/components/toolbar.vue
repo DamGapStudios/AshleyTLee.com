@@ -1,12 +1,15 @@
 <template>
-  <div class="navbar">
-    <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
-    <div class="toolbar-container">
-      <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
-      <social-giving class="social"></social-giving>
-      <social-instagram class="social"></social-instagram>
-      <social-facebook class="social"></social-facebook>
-      <social-twitter class="social"></social-twitter>
+  <div>
+    <div class="blur"></div>
+    <div class="navbar">
+      <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
+      <div class="toolbar-container">
+        <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
+        <social-giving class="social"></social-giving>
+        <social-instagram class="social"></social-instagram>
+        <social-facebook class="social"></social-facebook>
+        <social-twitter class="social"></social-twitter>
+      </div>
     </div>
   </div>
 </template>
@@ -34,12 +37,27 @@
 
 <style scoped>
   .navbar {
-    background-color: #A3D9D9;
+    background: transparent;
     padding: 5px;
     height: 90px;
-    opacity: .25;
-
+    opacity: .75;
+    z-index: 3;
+    position:fixed;
+    top:0;
+    width: 100%;
   }
+
+  .blur{
+    background-color: #a8dbdf;
+    filter: blur(2px);
+    z-index: 2;
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 90px;
+    opacity: .75;
+  }
+
   .toolbar-container{
     display: flex;
     align-items:baseline;

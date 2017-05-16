@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <tool-bar></tool-bar>
-    <router-view></router-view>
+    <router-view class="top"></router-view>
     <footer-bar></footer-bar>
   </div>
 </template>
@@ -51,5 +51,9 @@
 
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .top {
+    padding-top: 100px;
   }
 </style>
