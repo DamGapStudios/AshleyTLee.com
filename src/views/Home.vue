@@ -124,7 +124,7 @@
   }
   .about-button.noside:hover{
     border: 1px #F7F7F7 solid;
-    margin: 9px 9px 9px 0px;
+    margin: 9px 19px 9px 0px;
   }
 
   .about-button{
