@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
+    <div id="promo">
       Click here to hear today's FREE teachings fom Ashley T Lee!
       <a href="" class="about-button">Listen Now</a>
     </div>
@@ -76,9 +76,11 @@
 
   }
   #promo{
+    text-align: center;
+    font-size: 30px;
     background-color: #4B7FC0;
     color: white;
-    padding: 0 5%;
+    padding: 100px 5%;
   }
 
   .text-block {
