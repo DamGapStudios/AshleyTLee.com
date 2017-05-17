@@ -17,7 +17,7 @@
         <button v-on:click="show = !show" class="menubutton">
           Menu
         </button>
-        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px;">
+        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; float: right; margin-right: 40%">
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
@@ -182,6 +182,7 @@
     }
 
     .menubutton{
+        float: left;
       height: 90px;
       background-color: transparent;
       align-items: flex-start;
