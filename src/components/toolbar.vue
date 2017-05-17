@@ -14,10 +14,10 @@
 
     <div class="navbar mobile">
       <div>
-        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; display: block; margin: 0 0 0 20%;float: left; ">
         <button v-on:click="show = !show" class="menubutton">
           Menu
         </button>
+        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px;">
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
@@ -104,9 +104,7 @@
 
     .toolbar-link:hover {
       background: #a3e1e5;
-      border-color: white;
-      border-width: 2px;
-      border-style: solid;
+      border: white 2px solid;
       cursor: pointer;
       margin: 2px 12px;
       box-shadow: 1px 1px 15px 1px #fff;
@@ -114,9 +112,7 @@
 
     .router-link-active {
       background: #a3e1e5;
-      border-color: white;
-      border-width: 2px;
-      border-style: solid;
+      border: white 2px solid;
       margin: 2px 12px;
       /*font-size: 14pt*/
     }
@@ -186,9 +182,7 @@
     }
 
     .menubutton{
-      margin-right: 1%;
       height: 90px;
-      float: right;
       background-color: transparent;
       align-items: flex-start;
       text-align: center;
