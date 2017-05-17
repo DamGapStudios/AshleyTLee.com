@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="blur"></div>
-    <div class="navbar">
+    <div class="navbar large">
       <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
       <div class="toolbar-container">
         <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
@@ -10,6 +10,25 @@
         <social-facebook class="social"></social-facebook>
         <social-twitter class="social"></social-twitter>
       </div>
+    </div>
+
+    <div class="navbar mobile">
+      <div>
+        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; display: block; margin: 0 0 0 20%;float: left; ">
+        <button v-on:click="show = !show" class="menubutton">
+          Menu
+        </button>
+      </div>
+      <transition name="expand">
+        <div v-if="show" class="toolbar-container">
+          <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" v-on:click="show = !show" exact>{{ link.name }}</router-link>
+          <div style="display: inline-flex; flex-direction: row;justify-content: space-around;  align-items: center">
+            <social-instagram class="social"></social-instagram>
+            <social-facebook class="social"></social-facebook>
+            <social-twitter class="social"></social-twitter>
+          </div>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -29,6 +48,7 @@
     name: 'tool-bar',
     data () {
       return {
+          show: false
 
       }
     }
@@ -36,65 +56,150 @@
 </script>
 
 <style scoped>
-  .navbar {
-    background: transparent;
-    padding: 5px;
-    height: 90px;
-    opacity: .75;
-    z-index: 3;
-    position:fixed;
-    top:0;
-    width: 100%;
-  }
 
-  .blur{
-    background-color: #a8dbdf;
-    filter: blur(0px);
-    z-index: 2;
-    position:fixed;
-    top:0;
-    width: 100%;
-    height: 90px;
-    opacity: .75;
-  }
+  @media only screen and (min-width : 1024px) {
+    /* Styles */
+    .mobile {
+      display: none;
+    }
 
-  .toolbar-container{
-    display: flex;
-    align-items:baseline;
-    justify-content:flex-end;
-    vertical-align:middle;
-    float: right;
-    padding: 18px;
-  }
-  .toolbar-link {
-    color: white;
-    padding: 5px 10px;
-    margin: 4px 14px;
-    font-size: 12pt;
-  }
+    .navbar {
+      background: transparent;
+      padding: 5px;
+      height: 90px;
+      opacity: .75;
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      width: 100%;
 
-  .toolbar-link:hover{
-    background: #a3e1e5;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    cursor: pointer;
-    margin: 2px 12px;
-    box-shadow: 1px 1px 15px 1px #fff ;
-  }
+    }
 
-  .router-link-active{
-    background: #a3e1e5;
-    border-color: white;
-    border-width: 2px;
-    border-style: solid;
-    margin: 2px 12px;
-    /*font-size: 14pt*/
-  }
+    .blur {
+      background-color: #a8dbdf;
+      filter: blur(0px);
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 90px;
+      opacity: .9;
+    }
 
+    .toolbar-container {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      vertical-align: middle;
+      float: right;
+      padding: 18px;
+    }
+
+    .toolbar-link {
+      color: white;
+      padding: 5px 10px;
+      margin: 4px 14px;
+      font-size: 12pt;
+    }
+
+    .toolbar-link:hover {
+      background: #a3e1e5;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      cursor: pointer;
+      margin: 2px 12px;
+      box-shadow: 1px 1px 15px 1px #fff;
+    }
+
+    .router-link-active {
+      background: #a3e1e5;
+      border-color: white;
+      border-width: 2px;
+      border-style: solid;
+      margin: 2px 12px;
+      /*font-size: 14pt*/
+    }
+  }
   .social {
     fill: white;
     margin: auto 0;
   }
 
+  @media only screen and (max-width : 1024px) {
+    /* Styles */
+    .large {
+      display: none;
+    }
+    .navbar {
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .blur {
+      background-color: #a8dbdf;
+      filter: blur(0px);
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 90px;
+      opacity: .9;
+    }
+
+    .toolbar-link {
+      color: white;
+      font-size: 12pt;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .toolbar-link:hover{
+      cursor: pointer;
+    }
+
+    .toolbar-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #a8dbdf;
+      justify-content: center;
+      opacity: 1;
+    }
+
+    .router-link-active {
+      background: #a3e1e5;
+      border: white 2px solid;
+      margin: 3px 5px;
+      /*font-size: 14pt*/
+    }
+
+    .exapnd-enter-active, .expand-leave-active {
+      transition: opacity .5s
+    }
+
+    .expand-enter, .expand-leave-to /* .fade-leave-active in <2.1.8 */
+    {
+      opacity: 0
+    }
+
+    .menubutton{
+      margin-right: 1%;
+      height: 90px;
+      float: right;
+      background-color: transparent;
+      align-items: flex-start;
+      text-align: center;
+      cursor: default;
+      color: white;
+      padding: 2px 6px 3px;
+      border: none;
+    }
+
+    .menubutton:focus{
+      outline: none;
+    }
+  }
 </style>
