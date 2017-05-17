@@ -9,7 +9,7 @@
         <div class="audio-block" v-for="teaching in audioTeaching">
           <div class="audio-image"></div>
           {{ teaching.title.rendered}}<br/>
-          {{ teaching.date }}
+          <span style="font-size: 12px">{{ teaching.date }}<span>
         </div>
       </div>
     </div>
