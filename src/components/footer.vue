@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div>Copyright © {{ year }} |  Ashley T Lee Miniseries</div>
+    <div>Copyright © {{ year }} |  Ashley T Lee Ministries</div>
     <div>Site Created By Live Long Simple & DamGap Studios</div>
     <div>
       <social-instagram class="social"></social-instagram>

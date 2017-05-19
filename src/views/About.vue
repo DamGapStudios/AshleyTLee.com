@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-
+    <br>
     <h1 class="ashley-blue-text">{{title}}</h1>
 
     <div id="info">

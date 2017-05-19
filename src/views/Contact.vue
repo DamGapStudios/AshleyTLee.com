@@ -3,36 +3,36 @@
 
     <h1 class="ashley-blue-text">{{title}}</h1>
 
-    <div id="about">
-      <div class="text-block">
-        <div style="padding: 15px 0">
-          <span style="font-weight: bold">Ashley T Lee</span> is a Christan Author and Speaker. She is currently featured on over 100 Christin radio stations across America
-          and teaches through the Kings of th Bible on the website audio teachings.
-        </div>
-        <div style="padding: 15px 0">
-          Currently booking live talked and radio sessions!
-          <br/>
-          Message her below for further details:
-        </div>
-        <div style="display: block">
-          <a class="about-button noside">Message Ashley</a>
-          <a class="about-button">Read Statement of Faith</a>
-        </div>
-      </div>
+    <!--<div id="about">-->
+      <!--<div class="text-block">-->
+        <!--<div style="padding: 15px 0">-->
+          <!--<span style="font-weight: bold">Ashley T Lee</span> is a Christan Author and Speaker. She is currently featured on over 100 Christin radio stations across America-->
+          <!--and teaches through the Kings of th Bible on the website audio teachings.-->
+        <!--</div>-->
+        <!--<div style="padding: 15px 0">-->
+          <!--Currently booking live talked and radio sessions!-->
+          <!--<br/>-->
+          <!--Message her below for further details:-->
+        <!--</div>-->
+        <!--<div style="display: block">-->
+          <!--<a class="about-button noside">Message Ashley</a>-->
+          <!--<a class="about-button">Read Statement of Faith</a>-->
+        <!--</div>-->
+      <!--</div>-->
 
-      <div class="ashley-blue photo">
-        <img src="/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
-      </div>
-    </div>
+      <!--<div class="ashley-blue photo">-->
+        <!--<img src="/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>-->
+      <!--</div>-->
+    <!--</div>-->
 
     <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
-      Click here to hear today's FREE teachings fom Ashley T Lee!
+      Click here to hear today's FREE teachings from Ashley T Lee!
       <a class="about-button">Listen Now</a>
     </div>
 
     <form action="/wp-content/themes/AshleyTLeeTheme/dist/process.php" method="POST" id="contactCard">
       <h2 style="color: white; margin: 0; padding: 10px 10px 10px 0px">Contact</h2>
-      Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we wil be in touch
+      Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we will be in touch.
       <div class="contact-container">
         <div class="input-contact">
           <input type="text" name="name" placeholder="Name" v-model="name"/>
