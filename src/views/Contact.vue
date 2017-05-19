@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="contact-container">
-        <textarea name="message" placeholder="Message" v-model="message"></textarea>
+        <textarea  rows="4" name="message" placeholder="Message" v-model="message"></textarea>
       </div>
       <button class="submit" v-on:click="sendContact">Submit</button>
     </form>
