@@ -79,7 +79,5 @@
 </script>
 
 <style>
-.icon {
-    height: 30px;
-}
+
 </style>

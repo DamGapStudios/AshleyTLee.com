@@ -54,7 +54,9 @@
     }
   }
 </script>
-
+<style>
+    .icon {    height: 50px}
+</style>
 <style scoped>
 
   @media only screen and (min-width : 1024px) {
