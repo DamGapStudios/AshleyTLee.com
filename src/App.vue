@@ -51,6 +51,7 @@
 
   body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #565656;
   }
 
   .top {
