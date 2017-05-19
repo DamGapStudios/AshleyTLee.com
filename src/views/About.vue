@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <br>
-    <h1 class="ashley-blue-text">{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-about></nav-about>{{title}}</h1>
 
     <div id="info">
       <div class="ashley-blue photo">
@@ -37,6 +37,7 @@
 
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
+  import NavAbout from "../components/icons/nav-about.vue";
 
   export default {
     data () {
@@ -77,10 +78,19 @@
       }
     },
     components: {
-      HomeCanvas
+        NavAbout,
+        HomeCanvas
     }
   }
 </script>
+
+<style>
+  .nav-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+</style>
 
 <style scoped>
   #about {

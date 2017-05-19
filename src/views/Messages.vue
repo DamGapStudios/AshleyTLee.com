@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="ashley-blue-text">{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-messages></nav-messages>{{title}}</h1>
     <div id="messages">
       <div style=" margin: 40px 0">
         <p>Click on an audio teaching below to listen to free teaching of the bible</p>
@@ -27,6 +27,7 @@
 
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
+  import NavMessages from "../components/icons/nav-message.vue";
   export default {
       created () {
           this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
@@ -35,7 +36,9 @@
           }, response => {
           })
       },
-    components: {HomeCanvas},
+    components: {
+        NavMessages,
+        HomeCanvas},
     name: 'messages',
     data () {
       return {
@@ -45,6 +48,14 @@
     }
   }
 </script>
+
+<style>
+  .nav-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+</style>
 
 <style scoped>
   #messages{

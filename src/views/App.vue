@@ -1,6 +1,6 @@
 <template>
   <div id="app-page">
-    <h1 class="ashley-blue-text">{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-app></nav-app>{{title}}</h1>
 
     <div class="teaching-container">
 
@@ -35,8 +35,10 @@
 </template>
 
 <script>
+    import NavApp from "../components/icons/nav-app.vue";
   export default {
-    name: 'app',
+      components: {NavApp},
+      name: 'app',
     data () {
       return {
           title: 'App',
@@ -78,6 +80,14 @@
     }
   }
 </script>
+
+<style>
+  .nav-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+</style>
 
 <style scoped>
 

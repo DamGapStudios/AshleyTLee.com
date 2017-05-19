@@ -1,7 +1,7 @@
 <template>
   <div id="contact">
 
-    <h1 class="ashley-blue-text">{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-contact></nav-contact>{{title}}</h1>
 
     <!--<div id="about">-->
       <!--<div class="text-block">-->
@@ -51,6 +51,7 @@
 
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
+  import NavContact from "../components/icons/nav-contact.vue";
   export default {
     name: 'contact',
     data () {
@@ -62,7 +63,8 @@
       }
     },
     components: {
-      HomeCanvas
+        NavContact,
+        HomeCanvas
     },
       methods: {
         sendContact: function() {
@@ -87,21 +89,18 @@
             }, response => {
                 // error callback
             });
-
-//            $.ajax({
-//                type: "POST",
-//                url: "php/form-mail.php",
-//                data: "name=" + name + "&email=" + email + "&message=" + message,
-//                success : function(text){
-//                    if (text == "success"){
-//                        formSuccess();
-//                    }
-//                }
-//            });
         }
       }
   }
 </script>
+
+<style>
+  .nav-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+</style>
 
 <style scoped>
 

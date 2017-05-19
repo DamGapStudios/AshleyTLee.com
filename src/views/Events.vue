@@ -1,14 +1,17 @@
 <template>
   <div id="template">
-    <h1 class="ashley-blue-text">{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-events></nav-events>{{title}}</h1>
     <calender-full></calender-full>
   </div>
 </template>
 
 <script>
     import CalenderFull from "../components/calender/calender.vue";
+    import NavEvents from "../components/icons/nav-events.vue";
   export default {
-      components: {CalenderFull},
+      components: {
+          NavEvents,
+          CalenderFull},
       name: 'events',
     data () {
       return {
@@ -17,6 +20,14 @@
     }
   }
 </script>
+
+<style>
+  .nav-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+</style>
 
 <style>
 
