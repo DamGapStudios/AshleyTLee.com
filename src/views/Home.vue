@@ -13,14 +13,14 @@
           <br/>
           Message her below for further details:
         </div>
-        <div style="display: block">
+        <div class="about-button-container">
           <a href="" class="about-button ashley-blue noside">Message Ashley</a>
           <a href="" class="about-button ashley-blue">Read Statement of Faith</a>
         </div>
       </div>
 
-      <div class="ashley-blue photo">
-        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
+      <div class="photo">
+        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" class="portrait"/>
       </div>
     </div>
 
@@ -119,6 +119,10 @@
       margin: 10px;
     }
 
+    .about-button-container{
+      display: block;
+    }
+
     .about-button.noside{
       margin-left: 1px;
       margin-right: 20px;
@@ -179,6 +183,8 @@
       background-color: #4B7FC0;
       color: white;
       padding: 100px 5%;
+      display: flex;
+      flex-direction: column;
     }
 
     .text-block {
@@ -206,6 +212,10 @@
 
     }
 
+    .app-image {
+      display: none;
+    }
+
     .app-store {
       width: inherit;
     }
@@ -216,13 +226,9 @@
       margin: 10px;
     }
 
-    .about-button.noside{
-      margin-left: 1px;
-      margin-right: 20px;
-    }
-    .about-button.noside:hover{
-      border: 1px #F7F7F7 solid;
-      margin: 9px 19px 9px 0px;
+    .about-button-container{
+      display: flex;
+      flex-direction: column;
     }
 
     .about-button{
@@ -255,18 +261,20 @@
       border: none;
     }
 
+    .portrait{
+      width: initial; height: 100%
+    }
+
   }
 
   @media only screen and (max-width : 425px) {
-    #canvas {
-      display: none;
-    }
 
     #home {
       /*margin-top: 10px;*/
     }
     #about {
       display: flex;
+      flex-direction: column-reverse;
       align-items: center;
       margin: 30px 5%;
 
@@ -277,6 +285,9 @@
       background-color: #4B7FC0;
       color: white;
       padding: 100px 5%;
+      display: flex;
+      flex-direction: column;
+
     }
 
     .text-block {
@@ -304,23 +315,23 @@
 
     }
 
+    .app-image {
+      display: none;
+    }
+
     .app-store {
       width: inherit;
     }
 
     .photo {
-      height: 190px;
-      width: 190px;
-      margin: 10px;
+      width: inherit;
+      margin: auto;
+      display: block;
     }
 
-    .about-button.noside{
-      margin-left: 1px;
-      margin-right: 20px;
-    }
-    .about-button.noside:hover{
-      border: 1px #F7F7F7 solid;
-      margin: 9px 19px 9px 0px;
+    .about-button-container{
+      display: flex;
+      flex-direction: column;
     }
 
     .about-button{
