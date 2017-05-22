@@ -55,7 +55,7 @@
   }
 </script>
 <style>
-    .icon {    height: 50px}
+    .icon {    height: 28px}
 </style>
 <style scoped>
 
