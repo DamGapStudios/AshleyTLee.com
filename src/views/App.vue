@@ -91,75 +91,232 @@
 
 <style scoped>
 
-  #app{
-    background-color: #8FDCE0;
-    display: flex;
-    justify-content: center;
+  @media only screen and (min-width : 1024px) {
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .app {
+      display:inline-block;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+
+    a {
+      padding: 5px 10px ;
+      color: white;
+    }
+
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
+
+    .image:hover {
+      border: none;
+    }
+
+    .teaching-container {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      padding-bottom: 20px;
+      margin: 0 5%;
+    }
+    .teaching-block{
+      /*padding: 20px;*/
+      font-size: 24pt;
+    }
+    .teaching-image{
+      width: 200px;
+      height: 200px;
+      background-color: #8FDCE0;
+    }
+  }
+
+  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .app {
+      display:inline-flex;
+      flex-direction: column;
+    }
+
+    .app-image {
+      display: none;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+
+    a {
+      padding: 5px 10px ;
+      color: white;
+    }
+
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
+
+    .image:hover {
+      border: none;
+    }
+
+    .teaching-container {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      padding-bottom: 20px;
+      margin: 0 5%;
+    }
+    .teaching-block{
+      /*padding: 20px;*/
+      font-size: 24pt;
+    }
+    .teaching-image{
+      width: 200px;
+      height: 200px;
+      background-color: #8FDCE0;
+    }
 
   }
 
-  .app {
-    /*float: left;*/
+  @media only screen and (max-width : 425px) {
 
-    display:inline-block;
-  }
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
 
-  .app-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    }
 
-  }
+    .app {
+      display:inline-flex;
+      flex-direction: column;
+    }
 
-  .app-store {
-    width: inherit;
-  }
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-  .about-button{
-    background-color: #5CD1D6;
-    margin: 10px;
-    text-align: center;
-  }
+    }
+
+    .app-image {
+      display: none;
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
 
 
-  .about-button:hover{
-    border: 1px #F7F7F7 solid;
-    margin: 9px;
-  }
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
 
 
-  a {
-    padding: 5px 10px ;
-    color: white;
-  }
+    a {
+      padding: 5px 10px ;
+      color: white;
+    }
 
-  .image {
-    color: white;
-    background-color: transparent;
-    padding:0;
-    margin:0;
-    min-width: 0;
-  }
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
 
-  .image:hover {
-    border: none;
-  }
+    .image:hover {
+      border: none;
+    }
 
-  .teaching-container {
-    display: grid;
-    grid-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    padding-bottom: 20px;
-    margin: 0 5%;
-  }
-  .teaching-block{
-    /*padding: 20px;*/
-    font-size: 24pt;
-  }
-  .teaching-image{
-    width: 200px;
-    height: 200px;
-    background-color: #8FDCE0;
+    .teaching-container {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      margin: 0 5%;
+    }
+    .teaching-block{
+      /*padding: 20px;*/
+      font-size: 24pt;
+      text-align: center;
+    }
+    .teaching-image{
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      background-color: #8FDCE0;
+    }
+
   }
 
 </style>
