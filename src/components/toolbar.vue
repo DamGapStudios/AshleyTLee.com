@@ -218,7 +218,7 @@
     }
 
     .blur {
-      background-color: background-color: #a8dbdf;;
+      background-color: #a8dbdf;;
       filter: blur(0px);
       z-index: 2;
       position: fixed;
