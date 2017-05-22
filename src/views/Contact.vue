@@ -8,7 +8,7 @@
       <a class="about-button">Listen Now</a>
     </div>
 
-    <form action="/wp-content/themes/AshleyTLeeTheme/dist/process.php" method="POST" id="contactCard">
+    <form action="/wp-content/themes/AshleyTLeeTheme/dist/mail.php" method="POST" id="contactCard">
       <h2 style="color: white; margin: 0; padding: 10px 10px 10px 0px">Contact</h2>
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we will be in touch.
       <div class="contact-container">
