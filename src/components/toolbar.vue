@@ -17,7 +17,7 @@
         <button v-on:click="show = !show" class="menubutton">
           Menu
         </button>
-        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; float: right; margin-right: 40%">
+        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
@@ -118,13 +118,13 @@
       margin: 2px 12px;
       /*font-size: 14pt*/
     }
-  }
-  .social {
-    fill: white;
-    margin: auto 0;
+
+    .logo{
+      height: 80px; float: right; margin-right: 40%
+    }
   }
 
-  @media only screen and (max-width : 1024px) {
+  @media only screen and (max-width : 1024px) and (min-width: 425px) {
     /* Styles */
     .large {
       display: none;
@@ -198,5 +198,95 @@
     .menubutton:focus{
       outline: none;
     }
+
+    .logo{
+      height: 80px; float: right; margin-right: 40%
+    }
+  }
+
+
+  @media only screen and (max-width : 425px) {
+    /* Styles */
+    .large {
+      display: none;
+    }
+    .navbar {
+      z-index: 3;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .blur {
+      background-color: background-color: #a8dbdf;;
+      filter: blur(0px);
+      z-index: 2;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 90px;
+      opacity: .9;
+    }
+
+    .toolbar-link {
+      color: white;
+      font-size: 12pt;
+      text-align: center;
+      margin: 5px;
+    }
+
+    .toolbar-link:hover{
+      cursor: pointer;
+    }
+
+    .toolbar-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #a8dbdf;
+      justify-content: center;
+      opacity: 1;
+    }
+
+    .router-link-active {
+      background: #a3e1e5;
+      border: white 2px solid;
+      margin: 3px 5px;
+      /*font-size: 14pt*/
+    }
+
+    .exapnd-enter-active, .expand-leave-active {
+      transition: opacity .5s
+    }
+
+    .expand-enter, .expand-leave-to /* .fade-leave-active in <2.1.8 */
+    {
+      opacity: 0
+    }
+
+    .menubutton{
+        float: left;
+      height: 90px;
+      background-color: transparent;
+      align-items: flex-start;
+      text-align: center;
+      cursor: default;
+      color: white;
+      padding: 2px 6px 3px;
+      border: none;
+    }
+
+    .menubutton:focus{
+      outline: none;
+    }
+
+    .logo{
+      height: 70px; float: right; margin-right: 30%
+    }
+  }
+
+  .social {
+    fill: white;
+    margin: auto 0;
   }
 </style>
