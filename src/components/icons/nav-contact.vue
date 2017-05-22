@@ -1,8 +1,6 @@
 <template>
-    <div id="template">
-        <!--<?xml version="1.0" encoding="utf-8"?>-->
-        <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <div>
+        <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 	 viewBox="0 0 932.8 796" style="enable-background:new 0 0 932.8 796;" xml:space="preserve" class="nav-icon">
 <g>
 	<path class="st1" d="M785.2,413.1c-3.5,10.8,0.5,20.5,2.1,30.3c1.1,6.4,1.9,12.8,3,19.2c1.3,7.3,2.7,14.5,4,21.7
@@ -213,21 +211,17 @@
 		c-0.5-0.4-0.9-0.7-1.4-1.1c-0.5,0.9-1,1.8-1.5,2.8c0,0.1,0.8,0.7,0.9,0.7C183.2,493.1,183.9,492.3,184.5,491.5z M134.9,631.3
 		c-1.5-0.6-2.1-1-2.6-0.9c-0.5,0.1-1.1,0.7-1.2,1.3c-0.1,0.4,0.4,1,0.6,1.5C132.3,632.9,132.9,632.5,134.9,631.3z"></path>
 	<path class="st1" d="M726.8,571c0.2-1.2,0.3-2.4,0.5-3.7c0.4-0.1,0.7-0.2,1.1-0.3c0.6,1.2,1.2,2.4,2.1,4.4
-		c-1.9-0.3-2.9-0.4-3.8-0.6C726.6,570.8,726.8,571,726.8,571z"/>
+		c-1.9-0.3-2.9-0.4-3.8-0.6C726.6,570.8,726.8,571,726.8,571z"></path>
 	<path class="st1" d="M473.6,341.2c-0.7-0.8-1.4-1.2-1.3-1.6c0.1-0.6,0.6-1.2,1-1.8c0.4,0.3,1.3,0.7,1.2,1
-		C474.5,339.5,474,340.2,473.6,341.2z"/>
+		C474.5,339.5,474,340.2,473.6,341.2z"></path>
 </g>
 </svg>
-
     </div>
 </template>
 
 <script>
     export default {
         name: 'nav-contact',
-        data() {
-
-        },
     };
 </script>
 

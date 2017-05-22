@@ -3,28 +3,6 @@
 
     <h1 class="ashley-blue-text"><nav-contact></nav-contact>{{title}}</h1>
 
-    <!--<div id="about">-->
-      <!--<div class="text-block">-->
-        <!--<div style="padding: 15px 0">-->
-          <!--<span style="font-weight: bold">Ashley T Lee</span> is a Christan Author and Speaker. She is currently featured on over 100 Christin radio stations across America-->
-          <!--and teaches through the Kings of th Bible on the website audio teachings.-->
-        <!--</div>-->
-        <!--<div style="padding: 15px 0">-->
-          <!--Currently booking live talked and radio sessions!-->
-          <!--<br/>-->
-          <!--Message her below for further details:-->
-        <!--</div>-->
-        <!--<div style="display: block">-->
-          <!--<a class="about-button noside">Message Ashley</a>-->
-          <!--<a class="about-button">Read Statement of Faith</a>-->
-        <!--</div>-->
-      <!--</div>-->
-
-      <!--<div class="ashley-blue photo">-->
-        <!--<img src="/wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>-->
-      <!--</div>-->
-    <!--</div>-->
-
     <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
       Click here to hear today's FREE teachings from Ashley T Lee!
       <a class="about-button">Listen Now</a>
@@ -44,13 +22,12 @@
       <div class="contact-container">
         <textarea  rows="4" name="message" placeholder="Message" v-model="message"></textarea>
       </div>
-      <button class="submit" v-on:click="sendContact">Submit</button>
+      <button class="submit">Submit</button>
     </form>
   </div>
 </template>
 
 <script>
-  import HomeCanvas from '../components/homeCanvas.vue'
   import NavContact from "../components/icons/nav-contact.vue";
   export default {
     name: 'contact',
@@ -63,32 +40,13 @@
       }
     },
     components: {
-        NavContact,
-        HomeCanvas
+        NavContact
     },
       methods: {
         sendContact: function() {
           console.log("Name = " + this.name);
           console.log("Email = " + this.email);
           console.log("Message = " + this.message);
-
-            this.$http.post('process.php').then(response => {
-
-                // get status
-                response.status;
-
-                // get status text
-                response.statusText;
-
-                // get 'Expires' header
-                response.headers.get('Expires');
-
-                // get body data
-                this.someData = response.body;
-
-            }, response => {
-                // error callback
-            });
         }
       }
   }
