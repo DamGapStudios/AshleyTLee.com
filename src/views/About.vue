@@ -99,8 +99,6 @@
     background-color: #F7F7F7;
   }
 
-
-  /*Info*/
   @media only screen and (min-width : 1024px) {
     #info {
       display: flex;
