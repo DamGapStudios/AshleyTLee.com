@@ -200,7 +200,7 @@
     }
 
     .logo{
-      height: 80px; float: right; margin-right: 40%
+      height: 80px; float: right; margin-right: 50%
     }
   }
 
