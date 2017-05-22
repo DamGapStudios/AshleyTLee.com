@@ -4,8 +4,8 @@
     <h1 class="ashley-blue-text"><nav-about></nav-about>{{title}}</h1>
 
     <div id="info">
-      <div class="ashley-blue photo">
-        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" style="width: initial; height: 100%"/>
+      <div class="photo">
+        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" class="logo"/>
       </div>
       <div class="text-block">
         <div style="padding: 10px 0">
@@ -93,14 +93,97 @@
 </style>
 
 <style scoped>
+
   #about {
     /*margin-top: 10px;*/
     background-color: #F7F7F7;
   }
-  #info {
-    display: flex;
-    align-items: flex-start;
-    margin: 0 5%;
+
+
+  /*Info*/
+  @media only screen and (min-width : 1024px) {
+    #info {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 5%;
+    }
+
+    .about-button {
+      display: block;
+      color: white;
+      padding: 5px 10px;
+      background-color: #8FDCE0;
+      max-width: 150px;
+      margin: 2px;
+    }
+
+    .photo {
+      height: 190px;
+      width: 190px;
+      margin: 10px;
+      vertical-align: top;
+    }
+
+    .logo {
+      width: initial;
+      height: 100%
+    }
+
+  }
+
+  @media only screen and (max-width : 1024px) and (min-width: 425px) {
+    #info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 5%;
+    }
+
+    .about-button {
+      display: block;
+      color: white;
+      padding: 5px 10px;
+      background-color: #8FDCE0;
+      width: 95%;
+    }
+
+    .photo {
+      width: inherit;
+      margin: auto;
+      display: block;
+    }
+
+    .logo {
+    }
+
+  }
+
+  @media only screen and (max-width : 425px) {
+
+    #info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 0 5%;
+    }
+
+    .about-button {
+      display: block;
+      color: white;
+      padding: 5px 10px;
+      background-color: #8FDCE0;
+      width: 95%;
+    }
+
+    .photo {
+      width: inherit;
+      margin: auto;
+      display: block;
+    }
+
+    .logo {
+    }
+
   }
 
   #statementOfFaith {
@@ -108,25 +191,10 @@
     padding: 0 0 50px;
   }
 
-  .photo {
-    height: 190px;
-    width: 190px;
-    margin: 10px;
-    vertical-align: top;
-  }
-
   .text-block {
     margin: 10px;
   }
 
-  .about-button {
-    display: block;
-    color: white;
-    padding: 5px 10px;
-    background-color: #8FDCE0;
-    max-width: 150px;
-    margin: 2px;
-  }
 
   .about-button:hover {
     border: 2px #F7F7F7 solid;
