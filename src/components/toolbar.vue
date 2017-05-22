@@ -124,7 +124,7 @@
     }
   }
 
-  @media only screen and (max-width : 1024px) and (min-width: 425px) {
+  @media only screen and (max-width : 1023px) and (min-width: 426px) {
     /* Styles */
     .large {
       display: none;
