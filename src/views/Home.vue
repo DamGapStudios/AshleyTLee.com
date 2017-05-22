@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <home-canvas></home-canvas>
+    <home-canvas id="canvas"></home-canvas>
 
     <div id="about">
       <div class="text-block">
@@ -66,95 +66,294 @@
 </script>
 
 <style scoped>
-  #home {
-    /*margin-top: 10px;*/
-  }
-  #about {
-    display: flex;
-    align-items: center;
-    margin: 30px 5%;
+  @media only screen and (min-width : 1024px) {
+    #home {
+      /*margin-top: 10px;*/
+    }
+    #about {
+      display: flex;
+      align-items: center;
+      margin: 30px 5%;
+
+    }
+    #promo{
+      text-align: center;
+      font-size: 30px;
+      background-color: #4B7FC0;
+      color: white;
+      padding: 100px 5%;
+    }
+
+    .text-block {
+      margin: 10px;
+      font-size: 14pt;
+    }
+
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .app {
+      /*float: left;*/
+
+      display:inline-block;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .photo {
+      height: 190px;
+      width: 190px;
+      margin: 10px;
+    }
+
+    .about-button.noside{
+      margin-left: 1px;
+      margin-right: 20px;
+    }
+    .about-button.noside:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px 19px 9px 0px;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+
+    a {
+      padding: 11px 10px ;
+      color: white;
+    }
+
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
+
+    .image:hover {
+      border: none;
+    }
 
   }
-  #promo{
-    text-align: center;
-    font-size: 30px;
-    background-color: #4B7FC0;
-    color: white;
-    padding: 100px 5%;
+
+  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+    #canvas {
+      display: none;
+    }
+    #home {
+      /*margin-top: 10px;*/
+    }
+    #about {
+      display: flex;
+      align-items: center;
+      margin: 30px 5%;
+
+    }
+    #promo{
+      text-align: center;
+      font-size: 30px;
+      background-color: #4B7FC0;
+      color: white;
+      padding: 100px 5%;
+    }
+
+    .text-block {
+      margin: 10px;
+      font-size: 14pt;
+    }
+
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .app {
+      /*float: left;*/
+
+      display:inline-block;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .photo {
+      height: 190px;
+      width: 190px;
+      margin: 10px;
+    }
+
+    .about-button.noside{
+      margin-left: 1px;
+      margin-right: 20px;
+    }
+    .about-button.noside:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px 19px 9px 0px;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+
+    a {
+      padding: 11px 10px ;
+      color: white;
+    }
+
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
+
+    .image:hover {
+      border: none;
+    }
+
   }
 
-  .text-block {
-    margin: 10px;
-    font-size: 14pt;
+  @media only screen and (max-width : 425px) {
+    #canvas {
+      display: none;
+    }
+
+    #home {
+      /*margin-top: 10px;*/
+    }
+    #about {
+      display: flex;
+      align-items: center;
+      margin: 30px 5%;
+
+    }
+    #promo{
+      text-align: center;
+      font-size: 30px;
+      background-color: #4B7FC0;
+      color: white;
+      padding: 100px 5%;
+    }
+
+    .text-block {
+      margin: 10px;
+      font-size: 14pt;
+    }
+
+    #app{
+      background-color: #8FDCE0;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .app {
+      /*float: left;*/
+
+      display:inline-block;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .app-store {
+      width: inherit;
+    }
+
+    .photo {
+      height: 190px;
+      width: 190px;
+      margin: 10px;
+    }
+
+    .about-button.noside{
+      margin-left: 1px;
+      margin-right: 20px;
+    }
+    .about-button.noside:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px 19px 9px 0px;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+
+    a {
+      padding: 11px 10px ;
+      color: white;
+    }
+
+    .image {
+      color: white;
+      background-color: transparent;
+      padding:0;
+      margin:0;
+      min-width: 0;
+    }
+
+    .image:hover {
+      border: none;
+    }
+
   }
 
-  #app{
-    background-color: #8FDCE0;
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .app {
-   /*float: left;*/
-
-    display:inline-block;
-  }
-
-  .app-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-  }
-
-  .app-store {
-    width: inherit;
-  }
-
-  .photo {
-    height: 190px;
-    width: 190px;
-    margin: 10px;
-  }
-
-  .about-button.noside{
-    margin-left: 1px;
-    margin-right: 20px;
-  }
-  .about-button.noside:hover{
-    border: 1px #F7F7F7 solid;
-    margin: 9px 19px 9px 0px;
-  }
-
-  .about-button{
-    background-color: #5CD1D6;
-    margin: 10px;
-    text-align: center;
-  }
-
-
-  .about-button:hover{
-    border: 1px #F7F7F7 solid;
-    margin: 9px;
-  }
-
-
-  a {
-    padding: 11px 10px ;
-    color: white;
-  }
-
-  .image {
-    color: white;
-    background-color: transparent;
-    padding:0;
-    margin:0;
-    min-width: 0;
-  }
-
-  .image:hover {
-    border: none;
-  }
 
 </style>
