@@ -162,6 +162,10 @@
       border: none;
     }
 
+    .portrait{
+      width: initial; height: 100%
+    }
+
   }
 
   @media only screen and (max-width : 1023px) and (min-width: 426px) {
