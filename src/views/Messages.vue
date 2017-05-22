@@ -9,7 +9,7 @@
         <div class="audio-block" v-for="teaching in audioTeaching">
           <div class="audio-image"></div>
           {{ teaching.title.rendered}}<br/>
-          <span style="font-size: 12px">{{ teaching.date }}<span>
+          <span style="font-size: 12px">{{ teaching.date }}</span>
         </div>
       </div>
     </div>
@@ -81,25 +81,75 @@
   /*.audio-image:hover{*/
     /*border: 5px white inset;*/
   /*}*/
-  #appDownload{
-    padding: 30px 5%;
-    background-color: #F7F7F7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+
+  @media only screen and (min-width : 1024px) {
+    #appDownload{
+      padding: 30px 5%;
+      background-color: #F7F7F7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      background-color: #8FDCE0;
+      padding: 10px;
+      margin: 5px 10px;
+      color: white;
+      min-width: 150px;
+    }
+
+    a:hover{
+      margin: 4px 9px;
+      border: 1px white solid;
+    }
   }
 
-  a {
-    background-color: #8FDCE0;
-    padding: 10px;
-    margin: 5px 10px;
-    color: white;
-    min-width: 150px;
+  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+    #appDownload{
+      padding: 30px 5%;
+      background-color: #F7F7F7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      background-color: #8FDCE0;
+      padding: 10px;
+      margin: 5px 10px;
+      color: white;
+      min-width: 95%;
+      margin-top: 10px;
+    }
+
+    a:hover{
+
+    }
   }
 
-  a:hover{
-    margin: 4px 9px;
-    border: 1px white solid;
-  }
+  @media only screen and (max-width : 425px) {
+    #appDownload{
+      padding: 30px 5%;
+      background-color: #F7F7F7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
+    a {
+      background-color: #8FDCE0;
+      padding: 10px;
+      color: white;
+      width: 95%;
+      margin-top: 10px;
+    }
+
+    a:hover{
+
+    }
+  }
 </style>
