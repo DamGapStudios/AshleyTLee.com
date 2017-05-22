@@ -141,7 +141,7 @@
 
 
   a {
-    padding: 5px 10px ;
+    padding: 11px 10px ;
     color: white;
   }
 
