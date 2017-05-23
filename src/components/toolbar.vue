@@ -4,7 +4,7 @@
     <div class="navbar large">
       <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
       <div class="toolbar-container">
-        <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
+        <router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
         <!--<social-giving class="social"></social-giving>-->
         <social-instagram class="social"></social-instagram>
         <social-facebook class="social"></social-facebook>
@@ -21,7 +21,7 @@
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
-          <router-link  v-for="link in this.$router.options.routes" :key="link.name" class="toolbar-link" :to="link.path" tag="div" v-on:click="show = !show" exact>{{ link.name }}</router-link>
+          <router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" v-on:click="show = !show" exact>{{ link.name }}</router-link>
           <div style="display: inline-flex; flex-direction: row;justify-content: space-around;  align-items: center">
             <social-instagram class="social"></social-instagram>
             <social-facebook class="social"></social-facebook>
@@ -48,7 +48,37 @@
     name: 'tool-bar',
     data () {
       return {
-          show: false
+          show: false,
+          links: [
+              {
+                  path: '/',
+                  name: 'Home'
+              },
+              {
+                  path: '/about',
+                  name: 'About'
+              },
+              {
+                  path: '/messages',
+                  name: 'Messages'
+              },
+              {
+                  path: '/app',
+                  name: 'App'
+              },
+              {
+                  path: '/events',
+                  name: 'Events'
+              },
+              {
+                  path: '/contact',
+                  name: 'Contact'
+              },
+              {
+                  path: '/blogpage',
+                  name: 'Blog'
+              }
+          ]
 
       }
     }
