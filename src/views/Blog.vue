@@ -50,7 +50,6 @@
    }
 
     .blogs {
-      flex-grow: 2;
       margin: 0 20px 0 0 ;
     }
     .blogContent {
@@ -58,7 +57,7 @@
 
     .sideBar {
       width: auto;
-      flex-grow: 1;
+      min-width: 200px;
     }
 
   }
