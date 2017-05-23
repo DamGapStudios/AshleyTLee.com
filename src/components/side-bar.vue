@@ -48,4 +48,25 @@
         cursor: pointer;
         box-shadow: 1px 1px 15px 1px grey;
     }
+
+    @media only screen and (min-width : 1024px) {
+
+
+    }
+
+    @media only screen and (max-width : 1023px) and (min-width: 426px) {
+
+        #side-bar{
+            display: none;
+        }
+
+    }
+
+    @media only screen and (max-width : 425px) {
+
+        #side-bar{
+            display: none;
+        }
+
+    }
 </style>
