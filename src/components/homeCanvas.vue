@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: #8ad0d5; display: flex; justify-content: center" class="center-stuff">
+  <div class="canvasContainer">
     <canvas id="myCanvas" width="1143px" height="450px"></canvas>
   </div>
 </template>
@@ -174,16 +174,23 @@
 </script>
 
 <style scoped>
-img{
-  visibility: hidden;
-}
+
 
 @media only screen and (min-width : 1024px) {
 
+  .canvasContainer {
+    background-color: #8ad0d5;
+    display: flex;
+    justify-content: center
+  }
 }
 
 @media only screen and (max-width : 1023px) and (min-width: 426px) {
   #myCanvas {
+    display: none;
+  }
+
+  .canvasContainer {
     display: none;
   }
 
@@ -192,6 +199,10 @@ img{
 @media only screen and (max-width : 425px) {
 
   #myCanvas {
+    display: none;
+  }
+
+  .canvasContainer {
     display: none;
   }
 
