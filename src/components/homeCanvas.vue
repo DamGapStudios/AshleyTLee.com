@@ -19,8 +19,10 @@
         canvas.selection = false;
         canvas.hoverCursor = 'default';
 
-        let bookClick = function (evt) {
-        };
+        let bookClick = (function (evt) {
+            console.log("Book Clicked");
+            this.$router.push('/messages');
+        }).bind(this);
 
         let calenderClick = function (evt) {
         };
