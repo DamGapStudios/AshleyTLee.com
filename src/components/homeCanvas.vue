@@ -24,23 +24,35 @@
             this.$router.push('/messages');
         }).bind(this);
 
-        let calenderClick = function (evt) {
-        };
+        let calenderClick = (function (evt) {
+            console.log("Calender Clicked");
+            this.$router.push('/events');
+        }).bind(this);
 
-        let holderClick = function (evt) {
-        };
+        let holderClick = (function (evt) {
+            console.log("Holder Clicked");
+            this.$router.push('/events');
+        }).bind(this);
 
-        let phoneClick = function (evt) {
-        };
+        let phoneClick = (function (evt) {
+            console.log("Phone Clicked");
+            this.$router.push('/contact');
+        }).bind(this);
 
-        let portraitClick = function (evt) {
-        };
+        let portraitClick = (function (evt) {
+            console.log("Portrait Clicked");
+            this.$router.push('/about');
+        }).bind(this);
 
-        let vaseClick = function (evt) {
-        };
+        let vaseClick = (function (evt) {
+            console.log("Calender Clicked");
+            this.$router.push('/events');
+        }).bind(this);
 
-        let iPhoneClick = function (evt) {
-        };
+        let iPhoneClick = (function (evt) {
+            console.log("Calender Clicked");
+            this.$router.push('/app');
+        }).bind(this);
 
         fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_poster.png', function (poster) {
             poster.setLeft(250);
