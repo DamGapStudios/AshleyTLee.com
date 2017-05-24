@@ -7,7 +7,12 @@
       </div>
       <div class="audio-container">
         <div class="audio-block" v-for="teaching in audioTeaching">
-          <div class="audio-image"></div>
+          <div class="audio-image">
+            <audio controls style="width: 200px; margin-top: 168px">
+              <source :src="teaching.sermon_audio" type="audio/mpeg">
+              Your browser does not support the audio element
+            </audio>
+          </div>
           {{ teaching.title.rendered}}<br/>
           <span style="font-size: 12px">{{ teaching.date }}</span>
         </div>
@@ -32,7 +37,7 @@
       created () {
           this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
               this.audioTeaching = response.body;
-//        console.log(this.blog_posts)
+        console.log(this.audioTeaching)
           }, response => {
           })
       },

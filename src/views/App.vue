@@ -4,10 +4,15 @@
 
     <div class="teaching-container">
 
-        <div class="teaching-block" v-for="teaching in teachings">
-          <div class="teaching-image"></div>
-          {{ teaching.author }}<br/>
-          {{ teaching.date }}
+        <div class="teaching-block" v-for="teaching in audioTeaching">
+          <div class="teaching-image">
+            <audio controls style="width: 200px; margin-top: 168px">
+              <source :src="teaching.sermon_audio" type="audio/mpeg">
+              Your browser does not support the audio element
+            </audio>
+          </div>
+          {{ teaching.title.rendered }}<br/>
+          <span style="font-size: 12px">{{ teaching.date }}</span>
         </div>
 
     </div>
@@ -37,6 +42,13 @@
 <script>
     import NavApp from "../components/icons/nav-app.vue";
   export default {
+      created () {
+          this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
+              this.audioTeaching = response.body;
+              console.log(this.audioTeaching)
+          }, response => {
+          })
+      },
       components: {NavApp},
       name: 'app',
     data () {
@@ -45,37 +57,45 @@
           teachings: [
               {
                   author: 'Daniel',
-                  date: 'January 1 2017'
+                  date: 'January 1 2017',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Jeremiah',
-                  date: 'May 1 2016'
+                  date: 'May 1 2016',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Isaiah',
-                  date: 'June 27 2016'
+                  date: 'June 27 2016',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Isaiah',
-                  date: 'June 27 2016'
+                  date: 'June 27 2016',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Daniel',
-                  date: 'January 1 2017'
+                  date: 'January 1 2017',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Jeremiah',
-                  date: 'May 1 2016'
+                  date: 'May 1 2016',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Isaiah',
-                  date: 'June 27 2016'
+                  date: 'June 27 2016',
+                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
               },
               {
                   author: 'Isaiah',
                   date: 'June 27 2016'
               }
-          ]
+          ],
+          audioTeaching: []
       }
     }
   }
