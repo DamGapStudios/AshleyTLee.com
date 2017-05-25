@@ -1,6 +1,7 @@
 <template>
   <div id="template" class="top-more">
     <h1 class="ashley-blue-text"><nav-events></nav-events>{{title}}</h1>
+    <p class="sides" >{{intro}}</p>
     <full-calendar :events="eventSet" locale="en"></full-calendar>
   </div>
 </template>
@@ -18,7 +19,8 @@
       name: 'events',
     data () {
       return {
-        title: 'Events',
+          title: "Events",
+          intro: 'Powder tart lemon drops cookie dragée. Toffee gingerbread macaroon chocolate icing chupa chups apple pie. Jelly beans',
           events:[],
           eventSet: []
       }
@@ -46,6 +48,9 @@
   }
 </style>
 
-<style>
-
+<style scoped="">
+  .sides {
+    margin: 0 5%;
+    /*text-align: center;*/
+  }
 </style>
