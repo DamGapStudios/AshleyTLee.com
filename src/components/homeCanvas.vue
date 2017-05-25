@@ -75,7 +75,7 @@
       });
 
       fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_computer.png', function (computer) {
-        computer.setLeft(350);
+        computer.setLeft(400);
         computer.setTop(120);
         computer.hasControls = false;
         computer.hasBorders = false;
