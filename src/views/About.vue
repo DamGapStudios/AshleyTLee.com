@@ -1,6 +1,5 @@
 <template>
-  <div id="about">
-    <br>
+  <div id="about" class="top-more">
     <h1 class="ashley-blue-text"><nav-about></nav-about>{{title}}</h1>
 
     <div id="info">

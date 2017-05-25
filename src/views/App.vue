@@ -1,5 +1,5 @@
 <template>
-  <div id="app-page">
+  <div id="app-page" class="top-more">
     <h1 class="ashley-blue-text"><nav-app></nav-app>{{title}}</h1>
 
     <div class="teaching-container">

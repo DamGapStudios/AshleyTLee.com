@@ -1,5 +1,5 @@
 <template>
-  <div id="contact">
+  <div id="contact" class="top-more">
 
     <h1 class="ashley-blue-text"><nav-contact></nav-contact>{{title}}</h1>
 

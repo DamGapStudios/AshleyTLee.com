@@ -1,5 +1,5 @@
 <template>
-  <div id="blog">
+  <div id="blog" class="top-more">
     <h1 class="ashley-blue-text"><nav-blog></nav-blog>{{title}}</h1>
     <div class="blogSection">
       <div class="blogs">

@@ -1,5 +1,5 @@
 <template>
-    <div id="posts">
+    <div id="posts" class="top-more">
         <blog-single :post="blog_post" :author="author"></blog-single>
     </div>
 </template>

@@ -57,4 +57,8 @@
   .top {
     padding-top: 90px;
   }
+
+  .top-more {
+    padding-top: 120px;
+  }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="top-more">
     <h1 class="ashley-blue-text"><nav-messages></nav-messages>{{title}}</h1>
     <div id="messages">
       <div style=" margin: 40px 0">
-        <p>Click on an audio teaching below to listen to free teaching of the bible</p>
+        <p>Click on an audio teaching below to listen to free teaching of the bible:</p>
       </div>
       <div class="audio-container">
         <div class="audio-block" v-for="teaching in audioTeaching">

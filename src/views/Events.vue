@@ -1,5 +1,5 @@
 <template>
-  <div id="template">
+  <div id="template" class="top-more">
     <h1 class="ashley-blue-text"><nav-events></nav-events>{{title}}</h1>
     <full-calendar :events="eventSet" locale="en"></full-calendar>
   </div>
