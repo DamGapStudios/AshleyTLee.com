@@ -121,6 +121,7 @@
 
     .about-button-container{
       display: block;
+      margin-top: 10px;
     }
 
     .about-button.noside{
