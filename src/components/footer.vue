@@ -38,9 +38,9 @@
     .footer{
       height: 50px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      margin:  10px;
+      margin:  18px;
     }
 
     .footer-text {
