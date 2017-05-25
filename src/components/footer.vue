@@ -30,6 +30,10 @@
 </script>
 
 <style scoped>
+  .footer {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #565656;
+  }
   @media only screen and (min-width : 1024px) {
     .footer{
       height: 50px;
