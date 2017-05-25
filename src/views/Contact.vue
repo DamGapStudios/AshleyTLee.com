@@ -3,13 +3,7 @@
 
     <h1 class="ashley-blue-text"><nav-contact></nav-contact>{{title}}</h1>
 
-    <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
-      Click here to hear today's FREE teachings from Ashley T Lee!
-      <a class="about-button">Listen Now</a>
-    </div>
-
     <form action="/wp-content/themes/AshleyTLeeTheme/dist/mail.php" method="POST" id="contactCard">
-      <h2 style="color: white; margin: 0; padding: 10px 10px 10px 0px">Contact</h2>
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we will be in touch.
       <div class="contact-container">
         <div class="input-contact">
@@ -20,10 +14,15 @@
         </div>
       </div>
       <div class="contact-container">
-        <textarea  rows="4" name="message" placeholder="Message" v-model="message"></textarea>
+        <textarea  rows="8" name="message" placeholder="Message" v-model="message"></textarea>
       </div>
       <button class="submit">Submit</button>
     </form>
+
+    <div id="promo" style="text-align: center; padding: 30px; font-size: 30px">
+      Click here to hear today's FREE teachings from Ashley T Lee!
+      <a class="about-button">Listen Now</a>
+    </div>
   </div>
 </template>
 
@@ -63,34 +62,28 @@
 <style scoped>
 
   @media only screen and (min-width : 1024px) {
-    #about {
-      display: flex;
-      align-items: center;
-      margin: 30px 5%;
 
-    }
     #promo{
+      text-align: center;
+      font-size: 30px;
       background-color: #4B7FC0;
       color: white;
-      padding: 0 5%;
+      padding: 100px 5%;
     }
+
     #contactCard{
-      padding: 0 5%;
+      padding: 30px 5%;
       height: auto;
       background-color: #8FDCE0;
       color: white;
     }
 
-    .text-block {
-      margin: 10px;
-      font-size: 14pt;
-    }
     .submit{
       background-color: #5CD1D6;
       width: 100%;
       text-align: center;
-      margin: 1px 1px 31px 1px;
-      padding: 10px;
+      margin: 1px 1px 1px 1px;
+      padding: 20px 10px;
       border: none;
       color: white;
       letter-spacing: normal;
@@ -103,22 +96,10 @@
     }
 
     .submit:hover{
-      margin: 0 0 30px 0;
       border: 1px #F7F7F7 solid;
-    }
-    .photo {
-      height: 190px;
-      width: 190px;
-      margin: 10px;
+      margin: 0;
     }
 
-    .about-button.noside{
-      margin-left: 1px;
-    }
-    .about-button.noside:hover{
-      border: 1px #F7F7F7 solid;
-      margin: 9px 9px 9px 0px;
-    }
     .about-button{
       background-color: #5CD1D6;
       margin: 10px;
@@ -127,9 +108,9 @@
     }
 
     .about-button:hover{
-      border: 1px #F7F7F7 solid;
-      margin: 9px;
+      background: #8fdce0;
     }
+
     .contact-container{
       padding: 10px 0 0 0;
       display: flex;
