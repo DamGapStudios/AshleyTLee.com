@@ -32,7 +32,10 @@
     <div id="app" class="center-stuff">
 
         <div class="app app-image">
-          <img src='wp-content/themes/AshleyTLeeTheme/dist/app_picture.png'/>
+          <img src='wp-content/themes/AshleyTLeeTheme/dist/app_picture_phone.png'/>
+        </div>
+        <div class="app app-image">
+          <img src='wp-content/themes/AshleyTLeeTheme/dist/app_picture_text.png'/>
         </div>
         <div class="app app-link">
           <a href='https://itunes.apple.com/us/app/ashley-t-lee/id998172757?ls=1&mt=8' class="image">
@@ -209,7 +212,7 @@
       background-color: #8FDCE0;
       display: flex;
       justify-content: center;
-
+      flex-direction: column;
     }
 
     .app {
@@ -219,14 +222,16 @@
     }
 
     .app-link {
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
       justify-content: center;
 
     }
 
     .app-image {
-      display: none;
+      display: inline-flex;
+      justify-content: center;
+      width: inherit;
     }
 
     .app-store {
@@ -312,7 +317,7 @@
       background-color: #8FDCE0;
       display: flex;
       justify-content: center;
-
+      flex-direction: column;
     }
 
     .app {
