@@ -77,6 +77,10 @@
               {
                   path: '/blogpage',
                   name: 'Blog'
+              },
+              {
+                  path: '/giving',
+                  name: 'Giving'
               }
           ]
 
@@ -85,7 +89,7 @@
   }
 </script>
 <style>
-    .icon {    height: 28px}
+    .icon {    height: 35px}
 </style>
 <style scoped>
 
@@ -317,6 +321,6 @@
 
   .social {
     fill: white;
-    margin: auto 0;
+    margin: auto 2px;
   }
 </style>
