@@ -7,7 +7,7 @@
         <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" class="logo"/>
       </div>
       <div class="text-block">
-        <div style="padding: 10px 0">
+        <div style="padding: 0 0 10px 0">
           Ashley Lee has a heart for unbelievers because she didn’t have the gospel clearly presented to her.  After writing the book,
           “RELATIONSHIPS: How To Have Relationships God’s Way”,  she did many speaking engagements and incorporated teaching people how to
           share their faith. She became involved with “Way of The Master” Ministry due to her heart for the lost to come to salvation.
@@ -21,12 +21,14 @@
           Ashley is currently pursuing a Master of Arts in Apologetics degree from Southern Evangelical Seminary. She is a
           Mom of 4 girls so can relate to all people dealing with raising families.
         </div>
-        <a href="/" class="about-button">Message Ashley</a>
+        <div style="padding: 10px 0" class="about-button-container">
+          <a href="/" class="about-button noside">Message Ashley</a>
+        </div>
       </div>
     </div>
 
     <div id="statementOfFaith">
-      <h2 class="ashley-blue-text">Statement of Faith</h2>
+      <h2 class="ashley-blue-text header">Statement of Faith</h2>
       <div v-for="statement in statementsOfFaith" :key="statement.title" class="statement">
         {{ statement.statement }} ({{statement.scripture }})
       </div>
@@ -94,7 +96,6 @@
 <style scoped>
 
   #about {
-    /*margin-top: 10px;*/
     background-color: #F7F7F7;
   }
 
@@ -105,13 +106,29 @@
       margin: 0 5%;
     }
 
-    .about-button {
-      display: block;
+    a {
+      padding: 11px 10px ;
       color: white;
-      padding: 5px 10px;
-      background-color: #8FDCE0;
-      max-width: 150px;
-      margin: 2px;
+    }
+
+    .about-button.noside{
+      margin-left: 1px;
+      margin-right: 20px;
+
+    }
+    .about-button.noside:hover{
+      background: #8fdce0;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      background: #8fdce0;
     }
 
     .photo {
@@ -126,6 +143,10 @@
       height: 100%
     }
 
+    .header {
+      margin: 0;
+    }
+
   }
 
   @media only screen and (max-width : 1023px) and (min-width: 426px) {
@@ -136,12 +157,21 @@
       margin: 0 5%;
     }
 
-    .about-button {
-      display: block;
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      background: #8fdce0;
+    }
+
+
+    a {
+      padding: 11px 10px ;
       color: white;
-      padding: 5px 10px;
-      background-color: #8FDCE0;
-      width: 95%;
     }
 
     .photo {
@@ -164,12 +194,25 @@
       margin: 0 5%;
     }
 
-    .about-button {
-      display: block;
+    .about-button-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-button{
+      background-color: #5CD1D6;
+      margin: 10px;
+      text-align: center;
+    }
+
+
+    .about-button:hover{
+      background: #8fdce0;
+    }
+
+    a {
+      padding: 11px 10px ;
       color: white;
-      padding: 5px 10px;
-      background-color: #8FDCE0;
-      width: 95%;
     }
 
     .photo {
@@ -190,12 +233,6 @@
 
   .text-block {
     margin: 10px;
-  }
-
-
-  .about-button:hover {
-    border: 2px #F7F7F7 solid;
-    margin: 0;
   }
 
   .statement{
