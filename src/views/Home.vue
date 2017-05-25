@@ -47,11 +47,14 @@
         </div>
 
     </div>
+
+    <prayer-request></prayer-request>
   </div>
 </template>
 
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
+  import PrayerRequest from "../components/prayer-request.vue";
 
   export default {
     data () {
@@ -60,7 +63,8 @@
       }
     },
     components: {
-      HomeCanvas
+        PrayerRequest,
+        HomeCanvas
     }
   }
 </script>
