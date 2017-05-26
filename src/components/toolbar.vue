@@ -4,7 +4,15 @@
     <div class="navbar large">
       <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
       <div class="toolbar-container">
-        <router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
+        <router-link to="/" class="toolbar-link" tag="div" exact>Home</router-link>
+        <router-link to="/about" class="toolbar-link" tag="div" exact><nav-about class="toolbar-icon"></nav-about>About</router-link>
+        <router-link to="/messages" class="toolbar-link" tag="div" exact><nav-messages class="toolbar-icon"></nav-messages>Messages</router-link>
+        <router-link to="/app" class="toolbar-link" tag="div" exact><nav-app class="toolbar-icon"></nav-app>App</router-link>
+        <router-link to="/events" class="toolbar-link" tag="div" exact><nav-events class="toolbar-icon"></nav-events>Events</router-link>
+        <router-link to="/contact" class="toolbar-link" tag="div" exact><nav-contact class="toolbar-icon"></nav-contact>Contact</router-link>
+        <router-link to="/blogpage" class="toolbar-link" tag="div" exact><nav-blog class="toolbar-icon"></nav-blog>Blog</router-link>
+          <router-link to="/giving" class="toolbar-link" tag="div" exact><nav-giving class="toolbar-icon"></nav-giving>Giving</router-link>
+        <!--<router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>-->
         <!--<social-giving class="social"></social-giving>-->
         <social-instagram class="social"></social-instagram>
         <social-facebook class="social"></social-facebook>
@@ -38,9 +46,23 @@
     import SocialFacebook from "./icons/social_facebook.vue";
     import SocialTwitter from "./icons/social_twitter.vue";
     import SocialGiving from "./icons/social_giving.vue";
+    import NavAbout from "./icons/nav-about.vue";
+    import NavMessages from "./icons/nav-message.vue";
+    import NavApp from "./icons/nav-app.vue";
+    import NavEvents from "./icons/nav-events.vue";
+    import NavContact from "./icons/nav-contact.vue";
+    import NavBlog from "./icons/nav-blog.vue";
+    import NavGiving from "./icons/nav-giving.vue";
 
   export default {
       components: {
+          NavGiving,
+          NavBlog,
+          NavContact,
+          NavEvents,
+          NavApp,
+          NavMessages,
+          NavAbout,
           SocialGiving,
           SocialTwitter,
           SocialFacebook,
@@ -95,6 +117,7 @@
 
   @media only screen and (min-width : 1024px) {
     /* Styles */
+
     .mobile {
       display: none;
     }
@@ -136,6 +159,14 @@
       padding: 5px 10px;
       margin: 4px 14px;
       font-size: 12pt;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .toolbar-icon {
+      float: left;
+      height: 35px;
+      fill: white;
     }
 
     .toolbar-link:hover {
