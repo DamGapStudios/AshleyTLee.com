@@ -35,6 +35,10 @@
             color: white;
         }
 
+        .readMore:hover{
+            background: #8fdce0;
+        }
+
         .blog{
             margin: 20px 0;
         }

@@ -40,13 +40,12 @@
         padding: 10px;
         background: #5CD1D6;
         color: white;
-        border: white 2px solid;
         text-align: center;
     }
 
     .post:hover {
         cursor: pointer;
-        box-shadow: 1px 1px 15px 1px grey;
+        background: #8fdce0;
     }
 
     @media only screen and (min-width : 1024px) {
