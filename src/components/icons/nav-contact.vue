@@ -1,7 +1,6 @@
 <template>
-    <div>
         <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 viewBox="0 0 932.8 796" style="enable-background:new 0 0 932.8 796;" xml:space="preserve" class="nav-icon">
+	 viewBox="0 0 932.8 796" style="enable-background:new 0 0 932.8 796;" xml:space="preserve">
 <g>
 	<path class="st1" d="M785.2,413.1c-3.5,10.8,0.5,20.5,2.1,30.3c1.1,6.4,1.9,12.8,3,19.2c1.3,7.3,2.7,14.5,4,21.7
 		c0.2,1.3,0.7,2.7,0.5,4c-0.8,8.9,1.5,17.4,2.7,26c1.2,8.2,2,16.4,0.6,24.7c-0.6,3.7-0.2,7.6,0,11.4c0.4,8.3,1.4,16.6,1.4,24.8
@@ -216,7 +215,6 @@
 		C474.5,339.5,474,340.2,473.6,341.2z"></path>
 </g>
 </svg>
-    </div>
 </template>
 
 <script>

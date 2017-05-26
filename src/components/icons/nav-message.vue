@@ -1,9 +1,8 @@
 <template>
-    <div id="template">
         <!--<?xml version="1.0" encoding="utf-8"?>-->
         <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 932.8 796" style="enable-background:new 0 0 932.8 796;" xml:space="preserve" class="nav-icon">
+	 viewBox="0 0 932.8 796" style="enable-background:new 0 0 932.8 796;" xml:space="preserve">
 <g>
 	<path class="st2" d="M673.8,495.4c-4.1,0.3-8.2,0.5-12.3,0.8c-7.9,0.5-15.8,1-23.7,1.5c-7,0.5-14.1,1.3-21.1,1.5
 		c-6.3,0.2-12.7,0.3-19.1-0.2c-11.3-0.8-22.6,0-33.9,0.2c-7.3,0.1-14.7-0.9-22-0.1c-7.9,0.8-15.8,1.1-23.7,1.5
@@ -137,7 +136,6 @@
 	c1.9-2.3,2.6-5,2.7-7.8c0-3.4,0.1-6.7,1.4-10C671.2,634.3,670.9,632.6,668.7,632.4z"/>
 </svg>
 
-    </div>
 </template>
 
 <script>
