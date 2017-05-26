@@ -54,6 +54,12 @@
     color: #565656;
   }
 
+  .body-icon {
+    height: 37px;
+    fill: #5CD1D6;
+    float: left;
+  }
+
   .top {
     padding-top: 90px;
   }

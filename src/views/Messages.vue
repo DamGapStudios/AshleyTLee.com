@@ -1,6 +1,6 @@
 <template>
   <div class="top-more">
-    <h1 class="ashley-blue-text"><nav-messages></nav-messages>{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-messages class="body-icon"></nav-messages>{{title}}</h1>
     <div id="messages">
       <div style=" margin: 40px 0">
         <p>Click on an audio teaching below to listen to free teaching of the bible:</p>
@@ -55,11 +55,7 @@
 </script>
 
 <style>
-  .nav-icon {
-    height: 37px;
-    fill: #5CD1D6;
-    float: left;
-  }
+
 </style>
 
 <style scoped>

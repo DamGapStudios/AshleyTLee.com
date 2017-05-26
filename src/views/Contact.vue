@@ -1,7 +1,7 @@
 <template>
   <div id="contact" class="top-more">
 
-    <h1 class="ashley-blue-text"><nav-contact></nav-contact>{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-contact class="body-icon"></nav-contact>{{title}}</h1>
 
     <form action="/wp-content/themes/AshleyTLeeTheme/dist/mail.php" method="POST" id="contactCard">
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we will be in touch.
@@ -52,14 +52,10 @@
 </script>
 
 <style>
-  .nav-icon {
-    height: 37px;
-    fill: #5CD1D6;
-    float: left;
-  }
 </style>
 
 <style scoped>
+
 
   @media only screen and (min-width : 1024px) {
 

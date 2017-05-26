@@ -1,6 +1,6 @@
 <template>
   <div id="template" class="top-more">
-    <h1 class="ashley-blue-text"><nav-events></nav-events>{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-events class="body-icon"></nav-events>{{title}}</h1>
     <p class="sides" >{{intro}}</p>
     <full-calendar :events="eventSet" locale="en"></full-calendar>
   </div>
@@ -41,11 +41,7 @@
 </script>
 
 <style>
-  .nav-icon {
-    height: 37px;
-    fill: #5CD1D6;
-    float: left;
-  }
+
 </style>
 
 <style scoped="">

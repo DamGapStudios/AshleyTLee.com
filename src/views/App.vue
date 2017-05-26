@@ -1,6 +1,6 @@
 <template>
   <div id="app-page" class="top-more">
-    <h1 class="ashley-blue-text"><nav-app></nav-app>{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-app class="body-icon"></nav-app>{{title}}</h1>
 
     <div class="teaching-container">
 
@@ -102,11 +102,6 @@
 </script>
 
 <style>
-  .nav-icon {
-    height: 37px;
-    fill: #5CD1D6;
-    float: left;
-  }
 </style>
 
 <style scoped>

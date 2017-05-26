@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="top-more">
-    <h1 class="ashley-blue-text"><nav-about></nav-about>{{title}}</h1>
+    <h1 class="ashley-blue-text"><nav-about class="body-icon"></nav-about>{{title}}</h1>
 
     <div id="info">
       <div class="photo">
@@ -86,11 +86,6 @@
 </script>
 
 <style>
-  .nav-icon {
-    height: 37px;
-    fill: #5CD1D6;
-    float: left;
-  }
 </style>
 
 <style scoped>
