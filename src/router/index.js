@@ -8,6 +8,7 @@ import Events from '../views/Events.vue';
 import Blog from '../views/Blog.vue';
 import Contact from '../views/Contact.vue';
 import Posts from '../views/Posts.vue';
+import Giving from '../views/Giving.vue'
 // import BlogTest from '../views/BlogTest.vue';
 Vue.use(Router);
 
@@ -48,6 +49,11 @@ export default new Router({
       path: '/blogpage',
       name: 'Blog',
       component: Blog
+    },
+      {
+      path: '/giving',
+      name: 'Giving',
+      component: Giving
     },
       {
       path: '/blogpage/:id',
