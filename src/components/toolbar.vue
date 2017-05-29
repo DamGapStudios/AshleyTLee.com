@@ -22,9 +22,9 @@
 
     <div class="navbar mobile">
       <div>
-        <button v-on:click="show = !show" class="menubutton">
-          Menu
-        </button>
+        <div v-on:click="show = !show" class="menubutton">
+          &#9776;
+        </div>
         <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
       </div>
       <transition name="expand">
