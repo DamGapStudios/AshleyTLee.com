@@ -22,9 +22,9 @@
 
     <div class="navbar mobile">
       <div>
-        <div v-on:click="show = !show" class="menubutton">
+        <button v-on:click="show = !show" class="menubutton">
           &#9776;
-        </div>
+        </button>
         <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
       </div>
       <transition name="expand">
@@ -258,6 +258,7 @@
       color: white;
       padding: 2px 6px 3px;
       border: none;
+      font-size:xx-large;
     }
 
     .menubutton:focus{
