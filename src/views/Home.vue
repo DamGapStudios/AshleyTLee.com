@@ -143,6 +143,7 @@
       background-color: #5CD1D6;
       margin: 10px;
       text-align: center;
+      font-size: 14pt;
     }
 
 
