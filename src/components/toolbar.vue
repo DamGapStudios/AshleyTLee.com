@@ -11,7 +11,7 @@
         <router-link to="/events" class="toolbar-link" tag="div" exact><nav-events class="toolbar-icon"></nav-events>Events</router-link>
         <router-link to="/contact" class="toolbar-link" tag="div" exact><nav-contact class="toolbar-icon"></nav-contact>Contact</router-link>
         <router-link to="/blogpage" class="toolbar-link" tag="div" exact><nav-blog class="toolbar-icon"></nav-blog>Blog</router-link>
-          <router-link to="/giving" class="toolbar-link" tag="div" exact><nav-giving class="toolbar-icon"></nav-giving>Giving</router-link>
+          <!--<router-link to="/giving" class="toolbar-link" tag="div" exact><nav-giving class="toolbar-icon"></nav-giving>Giving</router-link>-->
         <!--<router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>-->
         <!--<social-giving class="social"></social-giving>-->
         <social-instagram class="social"></social-instagram>
@@ -99,10 +99,6 @@
               {
                   path: '/blogpage',
                   name: 'Blog'
-              },
-              {
-                  path: '/giving',
-                  name: 'Giving'
               }
           ]
 
