@@ -20,7 +20,7 @@
           NavBlog,
           BlogPost},
       created () {
-      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts').then(response => {
+      this.$http.get('http://ashleytlee.com/wp-json/wp/v2/posts').then(response => {
         this.blog_posts = response.body;
 //        console.log(this.blog_posts)
       }, response => {})

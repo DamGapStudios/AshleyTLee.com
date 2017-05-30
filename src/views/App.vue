@@ -43,7 +43,7 @@
     import NavApp from "../components/icons/nav-app.vue";
   export default {
       created () {
-          this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
+          this.$http.get('http://ashleytlee.com/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
               this.audioTeaching = response.body;
               console.log(this.audioTeaching)
           }, response => {
