@@ -155,7 +155,7 @@
     .toolbar-link {
       color: white;
       padding: 5px 10px;
-      margin: 4px 14px;
+      margin: 4px 4px;
       font-size: 12pt;
       display: inline-flex;
       align-items: center;
