@@ -1,6 +1,6 @@
 <template>
     <div id="Giving">
-
+        <header>{{title}}</header>
     </div>
 </template>
 

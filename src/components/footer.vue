@@ -3,7 +3,7 @@
     <div class="footer-text">Copyright © {{ year }} |  Ashley T Lee Ministries</div>
     <div class="footer-text">Site Created By Live Long Simple & DamGap Studios</div>
     <div class="footer-text">
-      <router-link to="/giving" class="toolbar-link" tag="div" exact><nav-giving class="toolbar-icon"></nav-giving>Giving</router-link>
+      <nav-giving class="social"></nav-giving>
       <social-instagram class="social"></social-instagram>
       <social-facebook class="social"></social-facebook>
       <social-twitter class="social"></social-twitter>
@@ -15,9 +15,11 @@
     import SocialInstagram from "./icons/social_instagram.vue";
     import SocialFacebook from "./icons/social_facebook.vue";
     import SocialTwitter from "./icons/social_twitter.vue";
+    import NavGiving from "./icons/nav-giving.vue";
 
   export default {
       components: {
+          NavGiving,
           SocialTwitter,
           SocialFacebook,
           SocialInstagram},
