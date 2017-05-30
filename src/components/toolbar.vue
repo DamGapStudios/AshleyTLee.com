@@ -4,7 +4,7 @@
     <div class="navbar large">
       <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
       <div class="toolbar-container">
-        <router-link to="/" class="toolbar-link" tag="div" exact>Home</router-link>
+        <router-link to="/" class="toolbar-link" tag="div" exact><nav-home class="toolbar-icon"></nav-home>Home</router-link>
         <router-link to="/about" class="toolbar-link" tag="div" exact><nav-about class="toolbar-icon"></nav-about>About</router-link>
         <router-link to="/messages" class="toolbar-link" tag="div" exact><nav-messages class="toolbar-icon"></nav-messages>Messages</router-link>
         <router-link to="/app" class="toolbar-link" tag="div" exact><nav-app class="toolbar-icon"></nav-app>App</router-link>
@@ -53,9 +53,11 @@
     import NavContact from "./icons/nav-contact.vue";
     import NavBlog from "./icons/nav-blog.vue";
     import NavGiving from "./icons/nav-giving.vue";
+    import NavHome from "./icons/nav-home.vue";
 
   export default {
       components: {
+          NavHome,
           NavGiving,
           NavBlog,
           NavContact,
