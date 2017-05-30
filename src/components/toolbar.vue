@@ -113,7 +113,7 @@
 </style>
 <style scoped>
 
-  @media only screen and (min-width : 1400px) {
+  @media only screen and (min-width : 1340px) {
     /* Styles */
 
     .mobile {
@@ -187,7 +187,7 @@
     }
   }
 
-  @media only screen and (max-width : 1399px) and (min-width: 426px) {
+  @media only screen and (max-width : 1339px) and (min-width: 426px) {
     /* Styles */
     .large {
       display: none;
