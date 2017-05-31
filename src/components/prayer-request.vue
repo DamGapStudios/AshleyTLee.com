@@ -1,6 +1,7 @@
 <template>
     <div id="prayer-request">
-       Prayer Request Place Holder
+        BNEW: Prayer Request Book - by Ashley T Lee! Available now on Amazon.
+        <a style="font-size: x-large" href="" class="about-button">See More</a>
     </div>
 </template>
 
@@ -23,4 +24,30 @@
      color: white;
      padding: 100px 5%;
  }
+
+ .about-button-container{
+     display: block;
+     margin-top: 10px;
+ }
+
+ .about-button.noside{
+     margin-left: 1px;
+     margin-right: 20px;
+ }
+ .about-button.noside:hover{
+     background: #8fdce0;
+ }
+
+ .about-button{
+     background-color: #5CD1D6;
+     margin: 10px;
+     text-align: center;
+     font-size: 14pt;
+ }
+
+
+ .about-button:hover{
+     background: #8fdce0;
+ }
+
 </style>
