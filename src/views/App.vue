@@ -4,16 +4,7 @@
 
     <div class="teaching-container">
 
-        <div class="teaching-block" v-for="teaching in audioTeaching">
-          <div class="teaching-image">
-            <audio controls style="width: 200px; margin-top: 168px">
-              <source :src="teaching.sermon_audio" type="audio/mpeg">
-              Your browser does not support the audio element
-            </audio>
-          </div>
-          {{ teaching.title.rendered }}<br/>
-          <span style="font-size: 12px">{{ teaching.date }}</span>
-        </div>
+      <audio-component class="teaching-block" v-for="teaching in teachings" :audio="teaching"></audio-component>
 
     </div>
 
@@ -43,59 +34,82 @@
 
 <script>
     import NavApp from "../components/icons/nav-app.vue";
+    import AudioComponent from "../components/audio-component.vue";
   export default {
-      created () {
-          this.$http.get('http://ashleytlee.com/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
-              this.audioTeaching = response.body;
-              console.log(this.audioTeaching)
-          }, response => {
-          })
-      },
-      components: {NavApp},
+      components: {
+          AudioComponent,
+          NavApp},
       name: 'app',
     data () {
       return {
           title: 'App',
           teachings: [
               {
-                  author: 'Daniel',
-                  date: 'January 1 2017',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Wonderful Morning!.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/mavpl36nhfqd6jr/Wonderful%20Morning%21.mp3?dl=1'
               },
               {
-                  author: 'Jeremiah',
-                  date: 'May 1 2016',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Are You Sleeping?.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/9g18750qso8ru99/Are%20You%20Sleeping%3F.mp3?dl=1'
               },
               {
-                  author: 'Isaiah',
-                  date: 'June 27 2016',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Apple of His Eye.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/mtydppik2hnc5q8/Apple%20of%20His%20Eye.mp3?dl=1'
               },
               {
-                  author: 'Isaiah',
-                  date: 'June 27 2016',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Devoted Love.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/36edib3g9utp8rb/Devoted%20Love.mp3?dl=1'
               },
               {
-                  author: 'Daniel',
-                  date: 'January 1 2017',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'First Love.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/lobi75huopfpwb3/First%20Love.mp3?dl=1'
               },
               {
-                  author: 'Jeremiah',
-                  date: 'May 1 2016',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Hiding Place.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/6oh3q3aw73tr8mr/Hiding%20Place.mp3?dl=1'
               },
               {
-                  author: 'Isaiah',
-                  date: 'June 27 2016',
-                  source: 'wp-content/themes/AshleyTLeeTheme/dist/audio/3719.mp3'
+                  title: {
+                      rendered: 'Jet Lag.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/sk2jumncmjpaal5/Jet%20Lag.mp3?dl=1'
               },
               {
-                  author: 'Isaiah',
-                  date: 'June 27 2016'
-              }
+                  title: {
+                      rendered: 'Peace.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/n90ux0f4dm94kag/Peace.mp3?dl=1'
+              },
+              {
+                  title: {
+                      rendered: 'Signs.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=0'
+              },
+              {
+                  title: {
+                      rendered: 'Throw In The Towel.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/f8u9kt21rhrttkc/Throw%20In%20The%20Towel.mp3?dl=1'
+              },
+              {
+                  title: {
+                      rendered: 'Roller Coaster.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1'
+              },
           ],
           audioTeaching: []
       }
