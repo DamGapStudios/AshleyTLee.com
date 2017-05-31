@@ -20,7 +20,7 @@
     data () {
       return {
           title: "Events",
-          intro: 'Powder tart lemon drops cookie dragée. Toffee gingerbread macaroon chocolate icing chupa chups apple pie. Jelly beans',
+          intro: 'Click on an Ashley T Lee Ministries event below for more info:',
           events:[],
           eventSet: []
       }
@@ -47,6 +47,6 @@
 <style scoped="">
   .sides {
     margin: 0 5%;
-    /*text-align: center;*/
+    text-align: center;
   }
 </style>

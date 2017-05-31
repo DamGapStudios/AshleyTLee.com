@@ -9,7 +9,7 @@
           and teaches through the Kings of the Bible on the website audio teachings.
         </div>
         <div style="padding: 15px 0">
-          Currently booking live talked and radio sessions!
+          Currently booking live talks and radio sessions!
           <br/>
           Message her below for further details:
         </div>
