@@ -28,7 +28,7 @@
     </div>
 
     <div id="statementOfFaith">
-      <h2 class="ashley-blue-text header">Statement of Faith</h2>
+      <h1 class="ashley-blue-text header">Statement of Faith</h1>
       <div v-for="statement in statementsOfFaith" :key="statement.title" class="statement">
         {{ statement.statement }} ({{statement.scripture }})
       </div>
@@ -144,7 +144,8 @@
     }
 
     .header {
-      margin: 0;
+      margin: 0 0 0 43.34px;
+
     }
 
   }
