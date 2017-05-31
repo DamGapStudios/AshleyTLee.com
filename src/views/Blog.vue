@@ -1,6 +1,6 @@
 <template>
   <div id="blog" class="top-more">
-    <h1 class="ashley-blue-text"><nav-blog class="body-icon"></nav-blog>{{title}}</h1>
+    <div class="ashley-blue-text"><nav-blog class="body-icon"></nav-blog><blog-title class="body-icon"></blog-title></div><br/>
     <div class="blogSection">
       <div class="blogs">
         <blog-post v-for="post in blog_posts" :post="post" class="blogContent"></blog-post>
@@ -14,8 +14,10 @@
     import BlogPost from "../components/blogpost.vue";
     import NavBlog from "../components/icons/nav-blog.vue";
     import SideBar from "../components/side-bar.vue";
+    import BlogTitle from "../components/icons/blog-title.vue";
   export default {
       components: {
+          BlogTitle,
           SideBar,
           NavBlog,
           BlogPost},
@@ -38,10 +40,14 @@
 </style>
 
 <style scoped>
+  #blog{
+    display: flex;
+    flex-direction: column;
+  }
 
   @media only screen and (min-width : 1160px) {
    .blogSection{
-     display: flex;
+     display: inline-flex;
      flex-direction: row;
      padding: 20px 5%;
      background-color: #4B7FC0;
