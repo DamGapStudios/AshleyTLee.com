@@ -4,6 +4,7 @@
     <div class="footer-text">Site Created By Live Long Simple & DamGap Studios</div>
     <div class="footer-text">
       <nav-giving class="social"></nav-giving>
+      <router-link to="/giving" class="social extra">Giving</router-link>
       <social-instagram class="social"></social-instagram>
       <social-facebook class="social"></social-facebook>
       <social-twitter class="social"></social-twitter>
@@ -36,6 +37,11 @@
   .footer {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #565656;
+  }
+
+  .footer-text {
+    display: inline-flex;
+    align-items: center;
   }
   @media only screen and (min-width : 1024px) {
     .footer{
@@ -81,6 +87,13 @@
 
   .social {
     fill: #5CD1D6;
+    color:#5CD1D6;
+
+  }
+
+  .social.extra {
+    margin-right: 20px;
+    font-size: 25.55px;
   }
 
 </style>
