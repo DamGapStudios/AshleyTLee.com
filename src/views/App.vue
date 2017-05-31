@@ -96,7 +96,7 @@
                   title: {
                       rendered: 'Signs.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=0'
+                  sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=1'
               },
               {
                   title: {
