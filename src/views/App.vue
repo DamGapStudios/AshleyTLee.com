@@ -110,8 +110,7 @@
                   },
                   sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1'
               },
-          ],
-          audioTeaching: []
+          ]
       }
     }
   }
