@@ -6,16 +6,8 @@
         <p>Click on an audio teaching below to listen to free teaching of the bible:</p>
       </div>
       <div class="audio-container">
-        <div class="audio-block" v-for="teaching in audioTeaching">
-          <div class="audio-image">
-            <audio controls style="width: 200px; margin-top: 168px">
-              <source :src="teaching.sermon_audio" type="audio/mpeg">
-              Your browser does not support the audio element
-            </audio>
-          </div>
-          {{ teaching.title.rendered}}<br/>
-          <span style="font-size: 12px">{{ teaching.date }}</span>
-        </div>
+        <audio-component class="audio-block" v-for="teaching in audioTeaching" :audio="teaching">
+        </audio-component>
       </div>
     </div>
 
@@ -33,6 +25,7 @@
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
   import NavMessages from "../components/icons/nav-message.vue";
+  import AudioComponent from "../components/audio-component.vue";
   export default {
       created () {
           this.$http.get('http://ashleytlee.com/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
@@ -42,6 +35,7 @@
           })
       },
     components: {
+        AudioComponent,
         NavMessages,
         HomeCanvas},
     name: 'messages',
@@ -73,11 +67,6 @@
     /*padding: 20px;*/
     font-size: 24pt;
     overflow: hidden;
-  }
-  .audio-image{
-    width: 200px;
-    height: 200px;
-    background-color: #8FDCE0;
   }
 
   /*.audio-image:hover{*/
