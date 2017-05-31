@@ -113,9 +113,9 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_holder.png', function (holder) {
-        holder.setLeft(700);
-        holder.setTop(275);
+      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_pencilholder.png', function (holder) {
+        holder.setLeft(750);
+        holder.setTop(230);
           holder.hasControls = false;
           holder.hasBorders = false;
           holder.lockMovementX = holder.lockMovementY = true;
