@@ -204,6 +204,7 @@
       text-shadow: none;
       display: inline-block;
       font-family: Helvetica Neue, Helvetica, Arial;
+      font-size: x-large;
     }
 
     .submit:hover{

@@ -26,7 +26,7 @@
     </div>
 
     <div id="promo">
-      Click here to hear today's FREE teachings fom Ashley T Lee!
+      Click here to hear today's FREE teachings from Ashley T Lee!
       <a style="font-size: x-large" href="" class="about-button">Listen Now</a>
     </div>
 

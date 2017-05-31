@@ -12,7 +12,7 @@
 //Magic that allows Vue Router to understand how to route
         let computerClick = (function (evt) {
             console.log("Computer clicked");
-            this.$router.push('/app');
+            this.$router.push('/messages');
         }).bind(this);
 
       let canvas = new fabric.Canvas('myCanvas');

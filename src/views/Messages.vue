@@ -24,7 +24,7 @@
         Like what you hear? Download our FREE app,
         now available on iTunes and Google Play
       </div>
-      <a class="button">Message Ashley</a>
+      <a class="button">Click to Download</a>
     </div>
 
   </div>
