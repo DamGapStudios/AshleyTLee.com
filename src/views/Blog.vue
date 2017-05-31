@@ -20,7 +20,7 @@
           NavBlog,
           BlogPost},
       created () {
-      this.$http.get('http://ashleytlee.com/wp-json/wp/v2/posts').then(response => {
+      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts').then(response => {
         this.blog_posts = response.body;
 //        console.log(this.blog_posts)
       }, response => {})
@@ -42,23 +42,35 @@
   @media only screen and (min-width : 1160px) {
    .blogSection{
      display: flex;
-     padding: 0 5%;
+     flex-direction: row;
+     padding: 20px 5%;
+     background-color: #4B7FC0;
    }
 
     .blogs {
       margin: 0 20px 0 0 ;
+      flex-grow: 3;
     }
     .blogContent {
+      background: white;
+      padding: 20px 10px;
     }
 
     .sideBar {
       width: auto;
       min-width: 200px;
+      flex-grow: 1;
     }
 
   }
 
   @media only screen and (max-width : 1159px) and (min-width: 426px) {
+
+    .blogSection{
+      background-color: #4B7FC0;
+    }
+
+
     .blogContent {
       padding: 0 5%;
     }
