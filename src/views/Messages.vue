@@ -72,6 +72,7 @@
   .audio-block{
     /*padding: 20px;*/
     font-size: 24pt;
+    overflow: hidden;
   }
   .audio-image{
     width: 200px;

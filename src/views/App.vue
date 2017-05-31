@@ -171,6 +171,7 @@
     .teaching-block{
       /*padding: 20px;*/
       font-size: 24pt;
+      overflow: hidden;
     }
     .teaching-image{
       width: 200px;
