@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-text">Copyright © {{ year }} |  Ashley T Lee Ministries</div>
-    <div class="footer-text">Site Created By Live Long Simple & DamGap Studios</div>
+    <div class="footer-text">Site Created By &nbsp; <a href="http://www.longlivesimeple.com"> Live Long Simple </a> &nbsp; & &nbsp; <a href="http://www.damgapstudios.com"> DamGap Studios </a></div>
     <div class="footer-text">
       <nav-giving class="social"></nav-giving>
       <router-link to="/giving" class="social extra">Giving</router-link>
@@ -42,6 +42,11 @@
   .footer-text {
     display: inline-flex;
     align-items: center;
+  }
+
+  a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #565656;
   }
   @media only screen and (min-width : 1024px) {
     .footer{
