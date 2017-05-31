@@ -259,8 +259,17 @@
       text-align: center;
     }
 
+    .about-button.noside{
+      margin: 10px;
+    }
+
 
     .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+    .about-button.noside:hover{
       border: 1px #F7F7F7 solid;
       margin: 9px;
     }
@@ -362,8 +371,17 @@
       text-align: center;
     }
 
+    .about-button.noside{
+      margin: 10px;
+    }
+
 
     .about-button:hover{
+      border: 1px #F7F7F7 solid;
+      margin: 9px;
+    }
+
+    .about-button.noside:hover{
       border: 1px #F7F7F7 solid;
       margin: 9px;
     }
