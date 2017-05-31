@@ -38,13 +38,12 @@
     .post {
         font-size: 14pt;
     }
-
-    @media only screen and (min-width : 1024px) {
+    @media only screen and (min-width : 1160px) {
 
 
     }
 
-    @media only screen and (max-width : 1023px) and (min-width: 426px) {
+    @media only screen and (max-width : 1159px) and (min-width: 426px) {
 
         .title {
             text-align: center;
@@ -59,5 +58,6 @@
         }
 
     }
+
 
 </style>
