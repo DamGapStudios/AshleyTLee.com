@@ -6,7 +6,7 @@
         <p>Click on an audio teaching below to listen to free teaching of the bible:</p>
       </div>
       <div class="audio-container">
-        <audio-component class="audio-block" v-for="teaching in audioTeaching" :audio="teaching" :images="images.find(id=teaching.featured_media)" v-if="loaded">
+        <audio-component class="audio-block" v-for="teaching in audioTeaching" :audio="teaching" v-if="loaded">
         </audio-component>
       </div>
     </div>
@@ -31,12 +31,8 @@
           this.$http.get('http://ashleytlee.com/wp-json/wp/v2/wpfc_sermon?per_page=8').then(response => {
               this.audioTeaching = response.body;
               console.log(this.audioTeaching);
-              this.$http.get('http://ashleytlee.com/wp-json/wp/v2/media?media_type=image').then(response => {
-                  this.images = response.body;
-                  console.log(this.images);
-                  console.log("Collected Images");
-                  this.loaded=true
-              })
+              console.log("Collected Images");
+              this.loaded=true
           }, response => {
           })
       },
@@ -49,7 +45,6 @@
       return {
         title: 'Messages',
         audioTeaching: [],
-          images: [],
           loaded: false
       }
     }
