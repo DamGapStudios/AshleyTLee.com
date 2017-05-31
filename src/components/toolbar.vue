@@ -113,7 +113,7 @@
 </style>
 <style scoped>
 
-  @media only screen and (min-width : 1340px) {
+  @media only screen and (min-width : 1145px) {
     /* Styles */
 
     .mobile {
@@ -154,8 +154,8 @@
 
     .toolbar-link {
       color: white;
-      padding: 5px 10px;
-      margin: 4px 14px;
+      padding: 5px;
+      margin: 4px;
       font-size: 12pt;
       display: inline-flex;
       align-items: center;
@@ -171,7 +171,7 @@
       background: #a3e1e5;
       border: white 2px solid;
       cursor: pointer;
-      margin: 2px 12px;
+      margin: 2px;
       box-shadow: 1px 1px 15px 1px #fff;
     }
 
@@ -187,7 +187,7 @@
     }
   }
 
-  @media only screen and (max-width : 1339px) and (min-width: 426px) {
+  @media only screen and (max-width : 1144px) and (min-width: 426px) {
     /* Styles */
     .large {
       display: none;
