@@ -39,7 +39,7 @@
 
 <style scoped>
 
-  @media only screen and (min-width : 1024px) {
+  @media only screen and (min-width : 1160px) {
    .blogSection{
      display: flex;
      padding: 0 5%;
@@ -58,7 +58,7 @@
 
   }
 
-  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+  @media only screen and (max-width : 1159px) and (min-width: 426px) {
     .blogContent {
       padding: 0 5%;
     }

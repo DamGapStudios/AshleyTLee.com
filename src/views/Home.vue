@@ -76,7 +76,7 @@
 </script>
 
 <style scoped>
-  @media only screen and (min-width : 1024px) {
+  @media only screen and (min-width : 1160px) {
     #home {
       /*margin-top: 10px;*/
     }
@@ -184,7 +184,7 @@
 
   }
 
-  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+  @media only screen and (max-width : 1159px) and (min-width: 426px) {
     #canvas {
       display: none;
     }

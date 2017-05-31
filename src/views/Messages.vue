@@ -84,7 +84,7 @@
   /*}*/
 
 
-  @media only screen and (min-width : 1024px) {
+  @media only screen and (min-width : 1160px) {
     #appDownload{
       padding: 30px 5%;
       background-color: #F7F7F7;
@@ -107,7 +107,7 @@
     }
   }
 
-  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+  @media only screen and (max-width : 1159px) and (min-width: 426px) {
     #appDownload{
       padding: 30px 5%;
       background-color: #F7F7F7;

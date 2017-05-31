@@ -108,7 +108,7 @@
 
 <style scoped>
 
-  @media only screen and (min-width : 1024px) {
+  @media only screen and (min-width : 1160px) {
     #app{
       background-color: #8FDCE0;
       display: flex;
@@ -179,7 +179,7 @@
     }
   }
 
-  @media only screen and (max-width : 1023px) and (min-width: 426px) {
+  @media only screen and (max-width : 1159px) and (min-width: 426px) {
 
     #app{
       background-color: #8FDCE0;
