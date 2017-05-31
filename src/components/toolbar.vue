@@ -2,7 +2,9 @@
   <div>
     <div class="blur"></div>
     <div class="navbar large">
-      <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
+      <router-link to="/" class="none">
+        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
+      </router-link>
       <div class="toolbar-container">
         <router-link to="/" class="toolbar-link" tag="div" exact><nav-home class="toolbar-icon"></nav-home>Home</router-link>
         <router-link to="/about" class="toolbar-link" tag="div" exact><nav-about class="toolbar-icon"></nav-about>About</router-link>
@@ -25,7 +27,9 @@
         <button v-on:click="show = !show" class="menubutton">
           &#9776;
         </button>
-        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
+        <router-link to="/" class="none">
+          <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
+        </router-link>
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
@@ -112,6 +116,11 @@
     .icon {    height: 35px}
 </style>
 <style scoped>
+  .router-link-active.none {
+    background: none;
+    border: none;
+    margin: 0;
+  }
 
   @media only screen and (min-width : 1160px) {
     /* Styles */
