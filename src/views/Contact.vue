@@ -108,7 +108,7 @@
     }
 
     .contact-container{
-      padding: 10px 0 0 0;
+      padding: 30px 0 0 0;
       display: flex;
       justify-content: space-between;
     }
@@ -134,7 +134,7 @@
       font-family: Helvetica Neue, Helvetica, Arial;
       border: 3px white solid;
       width: 100%;
-      margin: 10px 0;
+      margin: 30px 0;
       padding: 10px;
       color: white;
 
@@ -167,12 +167,7 @@
   }
 
   @media only screen and (max-width : 1159px) and (min-width: 426px) {
-    #about {
-      display: flex;
-      align-items: center;
-      margin: 30px 5%;
 
-    }
     #promo{
       background-color: #4B7FC0;
       color: white;
