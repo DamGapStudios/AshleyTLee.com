@@ -1,6 +1,6 @@
 <template>
     <div id="prayer-request">
-        Bacon ipsum dolor amet do in dolore pork loin mollit doner anim excepteur
+       Prayer Request Place Holder
     </div>
 </template>
 

@@ -178,7 +178,7 @@
     .router-link-active {
       background: #a3e1e5;
       border: white 2px solid;
-      margin: 2px 12px;
+      margin: 2px;
       /*font-size: 14pt*/
     }
 

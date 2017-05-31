@@ -33,12 +33,16 @@
         {{ statement.statement }} ({{statement.scripture }})
       </div>
     </div>
+
+    <prayer-request></prayer-request>
+
   </div>
 </template>
 
 <script>
   import HomeCanvas from '../components/homeCanvas.vue'
   import NavAbout from "../components/icons/nav-about.vue";
+  import PrayerRequest from "../components/prayer-request.vue";
 
   export default {
     data () {
@@ -79,6 +83,7 @@
       }
     },
     components: {
+        PrayerRequest,
         NavAbout,
         HomeCanvas
     }
