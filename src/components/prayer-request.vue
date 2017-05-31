@@ -1,7 +1,7 @@
 <template>
     <div id="prayer-request">
         <div class="text">NEW: Prayer Request Book - by Ashley T Lee! Available now on Amazon.</div>
-        <a style="font-size: x-large" href="" class="about-button">See More</a>
+        <a style="font-size: x-large" href="https://www.amazon.com/Prayer-Request-Book-Ashley-Lee/dp/B01N5AYH69" class="about-button">See More</a>
         <prayer-request-book class="book"></prayer-request-book>
         <prayer-request-text class="styledText"></prayer-request-text>
     </div>
