@@ -7,13 +7,11 @@
 </template>
 
 <script>
-    import CalenderFull from "../components/calender/calender.vue";
     import NavEvents from "../components/icons/nav-events.vue";
 
   export default {
       components: {
           NavEvents,
-          CalenderFull,
           'full-calendar': require('vue-fullcalendar'),
       },
       name: 'events',
