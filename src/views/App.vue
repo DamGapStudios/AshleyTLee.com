@@ -4,7 +4,7 @@
 
     <div class="teaching-container">
 
-      <audio-component class="teaching-block" v-for="teaching in teachings" :audio="teaching"></audio-component>
+      <audio-component class="teaching-block" v-for="teaching in teachings" :audio="teaching" :images="teaching.image"></audio-component>
 
     </div>
 
@@ -48,67 +48,78 @@
                   title: {
                       rendered: 'Wonderful Morning!.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/mavpl36nhfqd6jr/Wonderful%20Morning%21.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/mavpl36nhfqd6jr/Wonderful%20Morning%21.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/WounderfulMorning.jpg'
               },
               {
                   title: {
                       rendered: 'Are You Sleeping?.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/9g18750qso8ru99/Are%20You%20Sleeping%3F.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/9g18750qso8ru99/Are%20You%20Sleeping%3F.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/AreYouSleeping.jpg'
               },
               {
                   title: {
                       rendered: 'Apple of His Eye.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/mtydppik2hnc5q8/Apple%20of%20His%20Eye.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/mtydppik2hnc5q8/Apple%20of%20His%20Eye.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/AppleofhisEye.jpg'
               },
               {
                   title: {
                       rendered: 'Devoted Love.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/36edib3g9utp8rb/Devoted%20Love.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/36edib3g9utp8rb/Devoted%20Love.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/DevotedLove.jpg'
               },
               {
                   title: {
                       rendered: 'First Love.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/lobi75huopfpwb3/First%20Love.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/lobi75huopfpwb3/First%20Love.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/FirstLove.jpg'
               },
               {
                   title: {
                       rendered: 'Hiding Place.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/6oh3q3aw73tr8mr/Hiding%20Place.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/6oh3q3aw73tr8mr/Hiding%20Place.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/HidingPlace.jpg'
               },
               {
                   title: {
                       rendered: 'Jet Lag.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/sk2jumncmjpaal5/Jet%20Lag.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/sk2jumncmjpaal5/Jet%20Lag.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/JetLag.jpg'
               },
               {
                   title: {
                       rendered: 'Peace.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/n90ux0f4dm94kag/Peace.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/n90ux0f4dm94kag/Peace.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/Peace.jpg'
               },
               {
                   title: {
                       rendered: 'Signs.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/Signs.jpg'
               },
               {
                   title: {
                       rendered: 'Throw In The Towel.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/f8u9kt21rhrttkc/Throw%20In%20The%20Towel.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/f8u9kt21rhrttkc/Throw%20In%20The%20Towel.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/ThrowintheTowel.jpg'
               },
               {
                   title: {
                       rendered: 'Roller Coaster.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1'
+                  sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1',
+                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/RollerCoaster.jpg'
               },
           ]
       }

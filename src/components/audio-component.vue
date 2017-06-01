@@ -1,6 +1,6 @@
 <template>
     <div id="audio-component">
-        <!--<img class="audio-image" :src.sync="this.image" v-if="loaded">-->
+        <img class="audio-image" :src="images">
             <audio controls style="width: 200px;">
                 <source :src="audio.sermon_audio" type="audio/mpeg">
                 Your browser does not support the audio element
@@ -19,10 +19,7 @@
                 loaded: false
         };
         },
-        props: ['audio', 'images'],
-        created() {
-            console.log(this.audio.id);
-        },
+        props: ['audio', 'images']
     };
 </script>
 
@@ -32,5 +29,6 @@
         width: 200px;
         height: 200px;
         overflow: hidden;
+        background: #4B7FC0;
     }
 </style>
