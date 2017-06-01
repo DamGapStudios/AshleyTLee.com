@@ -26,7 +26,7 @@
       }
     },
       created(){
-          this.$http.get('http://ashleytlee.dev/wp-json/tribe/events/v1/events').then(response => {
+          this.$http.get('http://ashleytlee.com/wp-json/tribe/events/v1/events').then(response => {
               this.events = response.body.events;
               console.log(this.events);
               for (let i = 0; i < this.events.length; i++) {
