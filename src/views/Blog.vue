@@ -9,19 +9,30 @@
 
         </div>
 
-        <div class="header portrait">
-          <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" class="logo"/>
+        <div class="header portrait large">
+          <img src="http://www.ashleytlee.com/wp-content/uploads/2014/05/AshleyTLee.jpg" class="logo"/>
         </div>
 
       </div>
 
     </div>
 
-    <div class="blogSection">
-      <div class="blogs">
-        <blog-post v-for="post in blog_posts" :post="post" class="blogContent"></blog-post>
+    <div class="blogCard">
+      <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/blog_banner.jpg" class="blog_banner large"/>
+      <div class="blogSection">
+        <div class="blogs">
+          <blog-post v-for="post in blog_posts" :post="post" class="blogContent"></blog-post>
+        </div>
+        <side-bar class="sideBar" :post="side_posts"></side-bar>
       </div>
-      <side-bar class="sideBar" :post="blog_posts"></side-bar>
+    </div>
+
+    <div class="blogFooter">
+      <button class="nextButton med-up" v-on:click="pageUp">Next Page ></button>
+      <button class="previousButton med-up" v-on:click="pageDown" v-if="hide_previous">< Previous Page</button>
+
+      <button class="nextButton small" v-on:click="pageUp">></button>
+      <button class="previousButton small" v-on:click="pageDown" v-if="hide_previous"><</button>
     </div>
   </div>
 </template>
@@ -38,7 +49,14 @@
           NavBlog,
           BlogPost},
       created () {
-      this.$http.get('http://ashleytlee.com/wp-json/wp/v2/posts').then(response => {
+
+//          http://ashleytlee.com/wp-json/wp/v2/posts
+//          Sidebar Reteriving
+      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts').then(response => {
+        this.side_posts = response.body;
+//        console.log(this.blog_posts)
+      }, response => {});
+      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts?page=' + this.post_page+ '&per_page=10').then(response => {
         this.blog_posts = response.body;
 //        console.log(this.blog_posts)
       }, response => {})
@@ -46,9 +64,34 @@
     data () {
       return {
           title: 'Blog',
-          blog_posts: []
+          blog_posts: [],
+          side_posts: [],
+          post_page: 1,
+          hide_previous: false
       }
-    }
+    },
+      methods: {
+        pageUp: function () {
+            this.post_page +=1;
+            this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts?page=' + this.post_page+ '&per_page=10').then(response => {
+                this.blog_posts = response.body;
+//        console.log(this.blog_posts)
+            }, response => {});
+            console.log("Page Number = " + this.post_page);
+            this.hide_previous = true
+        },
+        pageDown: function () {
+            this.post_page -=1;
+            this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts?page=' + this.post_page+ '&per_page=10').then(response => {
+                this.blog_posts = response.body;
+//        console.log(this.blog_posts)
+            }, response => {});
+            console.log("Page Number = " + this.post_page);
+            if (this.post_page === 1){
+                this.hide_previous= false
+            }
+        }
+      }
   }
 </script>
 
@@ -62,11 +105,18 @@
   }
 
   @media only screen and (min-width : 1160px) {
+    .small{
+      display: none;
+    }
     .header {
       background: #56D1D7;
       padding: 10px 5% 20px ;
     }
 
+    .logo {
+      height: 252px;
+      width: 252px;
+    }
     .header.title{
       display: block;
       margin: auto;
@@ -96,16 +146,25 @@
       padding: 0;
     }
 
-   .blogSection{
+
+    /*BLOG SECTION*/
+    .blogCard {
+      margin: 30px 5%;
+      border: 1px solid #56D1D7;
+    }
+
+    .blog_banner {
+      width: 100%;
+    }
+
+    .blogSection{
      display: inline-flex;
      flex-direction: row;
-     padding: 20px 5%;
-     background-color: #4B7FC0;
+     padding: 20px 0;
    }
 
     .blogs {
-      margin: 0 20px 0 0 ;
-      flex-grow: 3;
+      margin: 0 0 0 0 ;
     }
     .blogContent {
       background: white;
@@ -115,15 +174,56 @@
     .sideBar {
       width: auto;
       min-width: 200px;
-      flex-grow: 1;
+      padding: 0 10px 0 0 ;
+    }
+
+    /*BLOG FOOTER*/
+    .blogFooter {
+      margin: 0 5% ;
+      background: #56D1D7;
+    }
+
+    .nextButton {
+      float: right;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 20px 40px;
+    }
+
+    .previousButton {
+      float: left;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 20px 40px;
     }
 
   }
 
   @media only screen and (max-width : 1159px) and (min-width: 426px) {
 
+    .large{
+      display: none;
+    }
+
+    .small{
+      display: none;
+    }
+
+    .header.title{
+      display: block;
+      margin: 10px auto;
+      height: 90px;
+      fill: #56D1D7;
+      border: #56D1D7 5px solid;
+      padding: 20px 30px;
+    }
+
     .blogSection{
-      background-color: #4B7FC0;
+      /*background-color: #4B7FC0;*/
     }
 
 
@@ -133,18 +233,87 @@
 
     .sideBar {
       display: none;
+    }
+
+    /*BLOG FOOTER*/
+    .blogFooter {
+      margin: 0 5% ;
+      background: #56D1D7;
+    }
+
+    .nextButton {
+      float: right;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 20px 40px;
+    }
+
+    .previousButton {
+      float: left;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 20px 40px;
     }
 
   }
 
   @media only screen and (max-width : 425px) {
 
+    .large {
+      display: none;
+    }
+
+    .med-up{
+      display: none;
+    }
+
+    .header.title{
+      display: block;
+      margin: 10px auto;
+      height: 90px;
+      fill: #56D1D7;
+      border: #56D1D7 5px solid;
+      padding: 20px 30px;
+    }
+
+    .large{
+      display: none;
+    }
+
     .blogContent {
       padding: 0 5%;
     }
 
     .sideBar {
       display: none;
+    }
+
+    /*BLOG FOOTER*/
+    .blogFooter {
+      margin: 0;
+      background: #56D1D7;
+    }
+
+    .nextButton {
+      float: right;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 5px 40px;
+    }
+
+    .previousButton {
+      float: left;
+      font-size: 20pt;
+      color: white;
+      background-color: transparent;
+      border: none;
+      padding: 5px 40px;
     }
 
   }

@@ -33,7 +33,6 @@
     .header {
         font-size: 20pt;
         text-align: center;
-        color: white;
     }
 
     .post {
