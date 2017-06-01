@@ -11,7 +11,10 @@
     <div id="app" class="center-stuff">
 
       <div class="app app-image">
-        <img src='wp-content/themes/AshleyTLeeTheme/dist/app_picture.png'/>
+        <img src='http://www.ashleytlee.com/wp-content/uploads/2017/06/app_picture_phone.png'/>
+      </div>
+      <div class="app app-image">
+        <img src='http://www.ashleytlee.com/wp-content/uploads/2017/06/app_picture_text.png'/>
       </div>
       <div class="app app-link">
 
@@ -19,7 +22,7 @@
         <a href="" class="">Click below to Download:</a>
 
         <a href='https://itunes.apple.com/us/app/ashley-t-lee/id998172757?ls=1&mt=8' class="image">
-          <img style='width: 155px; padding: 10px' class="app app-store" alt='Get it on the App Store' src='wp-content/themes/AshleyTLeeTheme/dist/Download_on_the_App_Store_Badge_US-UK_135x40.svg'/>
+          <img style='width: 155px; padding: 10px' class="app app-store" alt='Get it on the App Store' src='http://www.ashleytlee.com/wp-content/uploads/2014/05/Download_on_the_App_Store_Badge_US-UK_135x40.png'/>
         </a>
 
         <a href='https://play.google.com/store/apps/details?id=com.ashleytlee.AshleyTLee&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="image">
@@ -49,77 +52,77 @@
                       rendered: 'Wonderful Morning!.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/mavpl36nhfqd6jr/Wonderful%20Morning%21.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/WounderfulMorning.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/WounderfulMorning.jpg'
               },
               {
                   title: {
                       rendered: 'Are You Sleeping?.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/9g18750qso8ru99/Are%20You%20Sleeping%3F.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/AreYouSleeping.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/AreYouSleeping.jpg'
               },
               {
                   title: {
                       rendered: 'Apple of His Eye.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/mtydppik2hnc5q8/Apple%20of%20His%20Eye.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/AppleofhisEye.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/AppleofhisEye.jpg'
               },
               {
                   title: {
                       rendered: 'Devoted Love.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/36edib3g9utp8rb/Devoted%20Love.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/DevotedLove.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/DevotedLove.jpg'
               },
               {
                   title: {
                       rendered: 'First Love.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/lobi75huopfpwb3/First%20Love.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/FirstLove.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/FirstLove.jpg'
               },
               {
                   title: {
                       rendered: 'Hiding Place.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/6oh3q3aw73tr8mr/Hiding%20Place.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/HidingPlace.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/HidingPlace.jpg'
               },
               {
                   title: {
                       rendered: 'Jet Lag.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/sk2jumncmjpaal5/Jet%20Lag.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/JetLag.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/JetLag.jpg'
               },
               {
                   title: {
                       rendered: 'Peace.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/n90ux0f4dm94kag/Peace.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/Peace.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/Peace.jpg'
               },
               {
                   title: {
                       rendered: 'Signs.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/ndy86avt9tj6lr4/Signs.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/Signs.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/Signs.jpg'
               },
               {
                   title: {
                       rendered: 'Throw In The Towel.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/f8u9kt21rhrttkc/Throw%20In%20The%20Towel.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/ThrowintheTowel.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/ThrowintheTowel.jpg'
               },
               {
                   title: {
                       rendered: 'Roller Coaster.mp3'
                   },
                   sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1',
-                  image: 'wp-content/themes/AshleyTLeeTheme/dist/Apps/RollerCoaster.jpg'
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/RollerCoaster.jpg'
               },
           ]
       }

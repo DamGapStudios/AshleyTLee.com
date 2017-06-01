@@ -54,7 +54,7 @@
             this.$router.push('/app');
         }).bind(this);
 
-        fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_poster.png', function (poster) {
+        fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_poster.png', function (poster) {
             poster.setLeft(250);
             poster.setTop(-80);
             poster.selectable = false;
@@ -64,7 +64,7 @@
             canvas.renderAll()
         });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_desk.png', function (desk) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_desk.png', function (desk) {
         desk.setLeft(0);
         desk.setTop(132);
         desk.selectable = false;
@@ -74,7 +74,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_computer.png', function (computer) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_computer.png', function (computer) {
         computer.setLeft(400);
         computer.setTop(120);
         computer.hasControls = false;
@@ -87,7 +87,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_book.png', function (book) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_book.png', function (book) {
         book.setLeft(125);
         book.setTop(375);
         book.hasControls = false;
@@ -100,7 +100,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_calender.png', function (calender) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_calender.png', function (calender) {
         calender.setLeft(700);
         calender.setTop(50);
           calender.hasControls = false;
@@ -113,7 +113,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_pencilholder.png', function (holder) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_pencilholder.png', function (holder) {
         holder.setLeft(750);
         holder.setTop(230);
           holder.hasControls = false;
@@ -126,7 +126,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_phone.png', function (phone) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_phone.png', function (phone) {
         phone.setLeft(850);
         phone.setTop(300);
           phone.hasControls = false;
@@ -139,7 +139,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_portrait.png', function (portrait) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_portrait.png', function (portrait) {
         portrait.setLeft(125);
         portrait.setTop(50);
           portrait.hasControls = false;
@@ -153,7 +153,7 @@
       });
 
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_vase.png', function (vase) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_vase.png', function (vase) {
         vase.setLeft(250);
         vase.setTop(240);
           vase.hasControls = false;
@@ -166,7 +166,7 @@
         canvas.renderAll()
       });
 
-      fabric.Image.fromURL('wp-content/themes/AshleyTLeeTheme/dist/canvas_iphone.png', function (iPhone) {
+      fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_iphone.png', function (iPhone) {
         iPhone.setLeft(600);
         iPhone.setTop(355);
         iPhone.scale(.5);

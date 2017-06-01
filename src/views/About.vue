@@ -4,7 +4,7 @@
 
     <div id="info">
       <div class="photo">
-        <img src="wp-content/themes/AshleyTLeeTheme/dist/ashley_portrait.png" class="logo"/>
+        <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/ashley_portrait.png" class="logo"/>
       </div>
       <div class="text-block">
         <div style="padding: 0 0 10px 0">

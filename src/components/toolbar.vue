@@ -3,7 +3,7 @@
     <div class="blur"></div>
     <div class="navbar large">
       <router-link to="/" class="none">
-        <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" style="height: 80px; padding-left: 30px">
+        <img alt='Ashley Logo' src="http://www.ashleytlee.com/wp-content/uploads/2017/06/ashley_logo.png" style="height: 80px; padding-left: 30px">
       </router-link>
       <div class="toolbar-container">
         <router-link to="/" class="toolbar-link" tag="div" exact><nav-home class="toolbar-icon"></nav-home>Home</router-link>
@@ -28,7 +28,7 @@
           &#9776;
         </button>
         <router-link to="/" class="none">
-          <img alt='Ashley Logo' src="wp-content/themes/AshleyTLeeTheme/dist/ashley_logo.png" class="logo">
+          <img alt='Ashley Logo' src="http://www.ashleytlee.com/wp-content/uploads/2017/06/ashley_logo.png" class="logo">
         </router-link>
       </div>
       <transition name="expand">
