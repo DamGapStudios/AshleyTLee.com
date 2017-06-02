@@ -223,7 +223,8 @@
       color: white;
       font-size: 12pt;
       text-align: center;
-      margin: 5px;
+      margin: 10px 5px;
+      padding: 10px 5px;
     }
 
     .toolbar-link:hover{
@@ -305,7 +306,8 @@
       color: white;
       font-size: 12pt;
       text-align: center;
-      margin: 5px;
+      margin: 10px 5px;
+      padding: 10px 5px;
     }
 
     .toolbar-link:hover{
