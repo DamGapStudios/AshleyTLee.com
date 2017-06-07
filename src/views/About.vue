@@ -26,7 +26,7 @@
         </div>
       </div>
     </div>
-
+    <br>
     <div id="statementOfFaith">
       <h1 class="ashley-blue-text header">Statement of Faith</h1>
       <div v-for="statement in statementsOfFaith" :key="statement.title" class="statement">

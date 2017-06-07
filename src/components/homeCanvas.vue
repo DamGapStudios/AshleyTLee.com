@@ -21,7 +21,7 @@
 
         let bookClick = (function (evt) {
             console.log("Book Clicked");
-            this.$router.push('/messages');
+            this.$router.push('/blogpage');
         }).bind(this);
 
         let calenderClick = (function (evt) {
@@ -31,7 +31,7 @@
 
         let holderClick = (function (evt) {
             console.log("Holder Clicked");
-            this.$router.push('/events');
+            this.$router.push('/blogpage');
         }).bind(this);
 
         let phoneClick = (function (evt) {
@@ -44,10 +44,10 @@
             this.$router.push('/about');
         }).bind(this);
 
-        let vaseClick = (function (evt) {
-            console.log("Calender Clicked");
-            this.$router.push('/events');
-        }).bind(this);
+        // let vaseClick = (function (evt) {
+        //     console.log("Calender Clicked");
+        //     this.$router.push('/events');
+        // }).bind(this);
 
         let iPhoneClick = (function (evt) {
             console.log("Calender Clicked");
