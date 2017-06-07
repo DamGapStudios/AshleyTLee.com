@@ -349,6 +349,7 @@
       color: white;
       padding: 2px 6px 3px;
       border: none;
+      font-size: 30pt;
     }
 
     .menubutton:focus{
