@@ -91,7 +91,7 @@
       font-size: 30px;
       background-color: #4B7FC0;
       color: white;
-      padding: 200px 5%;
+      padding: 60px 5%;
     }
 
     .text-block {
