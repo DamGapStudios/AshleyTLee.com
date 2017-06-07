@@ -15,8 +15,8 @@
         </div>
         <br>
         <div class="about-button-container">
-          <a href="" class="about-button ashley-blue noside">Message Ashley</a>
-          <a href="" class="about-button ashley-blue">Read Statement of Faith</a>
+          <a href="/contact" class="about-button ashley-blue noside">Message Ashley</a>
+          <a href="/about" class="about-button ashley-blue">Read Statement of Faith</a>
         </div>
       </div>
 
@@ -27,7 +27,7 @@
 
     <div id="promo">
       Click here to hear today's FREE teachings from Ashley T Lee!
-      <a style="font-size: x-large" href="" class="about-button">Listen Now</a>
+      <a style="font-size: x-large" href="/messages" class="about-button">Listen Now</a>
     </div>
 
     <div id="app" class="center-stuff">

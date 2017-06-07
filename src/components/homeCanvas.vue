@@ -54,6 +54,11 @@
             this.$router.push('/app');
         }).bind(this);
 
+        canvas.on('mouse:over', function(e) {
+    e.target.setFill('red');
+    canvas.renderAll();
+  });
+
         fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_poster.png', function (poster) {
             poster.setLeft(250);
             poster.setTop(-80);
