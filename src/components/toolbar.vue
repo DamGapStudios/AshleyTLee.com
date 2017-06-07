@@ -33,7 +33,9 @@
       </div>
       <transition name="expand">
         <div v-if="show" class="toolbar-container">
-          <router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" v-on:click="show = !show" exact>{{ link.name }}</router-link>
+          <div v-on:click="show = false"  v-for="link in this.links" :key="link.name">
+            <router-link class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>
+          </div>
           <div style="display: inline-flex; flex-direction: row;justify-content: space-around;  align-items: center">
             <social-instagram class="social"></social-instagram>
             <social-facebook class="social"></social-facebook>

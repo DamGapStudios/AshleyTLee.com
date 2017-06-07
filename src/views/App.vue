@@ -314,19 +314,6 @@
       width: inherit;
     }
 
-    .about-button{
-      background-color: #5CD1D6;
-      margin: 10px;
-      text-align: center;
-    }
-
-
-    .about-button:hover{
-      border: 1px #F7F7F7 solid;
-      margin: 9px;
-    }
-
-
     a {
       padding: 5px 10px ;
       color: white;

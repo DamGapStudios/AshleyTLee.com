@@ -142,8 +142,18 @@
       margin-top: 10px;
     }
 
-    a:hover{
-
+    .audio-container{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      margin: 0 5%;
     }
+
+    .audio-block{
+      /*padding: 20px;*/
+      font-size: 24pt;
+      text-align: center;
+    }
+
   }
 </style>
