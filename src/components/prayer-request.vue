@@ -40,6 +40,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
+         height: 175px;
      }
 
      .about-button{
@@ -54,6 +55,7 @@
 
      .book {
          flex-basis: 15%;
+         height: inherit;
      }
 
      .styledText {
@@ -61,6 +63,7 @@
          fill:#FFFFFF;
          font-family:'Monthoers-Vintage';
          font-size:49px;
+         height: inherit;
      }
 
      .text {

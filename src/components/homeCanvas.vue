@@ -164,7 +164,7 @@
           vase.hasControls = false;
           vase.hasBorders = false;
           vase.lockMovementX = vase.lockMovementY = true;
-          vase.on('mouseup', vaseClick);
+//          vase.on('mouseup', vaseClick);
         canvas.add(vase);
 // eslint-disable-next-line quotes
         console.log('Added Vase');
