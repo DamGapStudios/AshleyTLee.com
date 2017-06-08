@@ -26,7 +26,7 @@ export default new Router({
       component: About
     },
     {
-      path: '/messages',
+      path: '/messagePage',
       name: 'Messages',
       component: Messages
     },
