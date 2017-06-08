@@ -43,11 +43,11 @@
 
 //          http://ashleytlee.com/wp-json/wp/v2/posts
 //          Sidebar Reteriving
-      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts').then(response => {
+      this.$http.get('http://ashleytlee.com/wp-json/wp/v2/posts').then(response => {
         this.side_posts = response.body;
 //        console.log(this.blog_posts)
       }, response => {});
-      this.$http.get('http://ashleytlee.dev/wp-json/wp/v2/posts?page=' + this.post_page+ '&per_page=10').then(response => {
+      this.$http.get('http://ashleytlee.com/wp-json/wp/v2/posts?page=' + this.post_page+ '&per_page=10').then(response => {
         this.blog_posts = response.body;
 //        console.log(this.blog_posts)
       }, response => {})
