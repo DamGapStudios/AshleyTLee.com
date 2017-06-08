@@ -144,7 +144,7 @@
     }
 
     .header {
-      margin: 0 0 0 43.34px;
+      margin: 0 0 0 0;
 
     }
 
