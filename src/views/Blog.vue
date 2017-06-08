@@ -1,19 +1,10 @@
 <template>
   <div id="blog">
-    <div class="header">
+    <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/AshleyTLee_Website_Blog.png" style="width: 100%" class="med-up"/>
+
+    <div class="header small">
+
       <blog-title class="header title"></blog-title>
-
-      <div class="header box-container">
-
-        <div class="header box">
-
-        </div>
-
-        <div class="header portrait large">
-          <img src="http://www.ashleytlee.com/wp-content/uploads/2014/05/AshleyTLee.jpg" class="logo"/>
-        </div>
-
-      </div>
 
     </div>
 
