@@ -80,6 +80,9 @@
     #home {
       /*margin-top: 10px;*/
     }
+    #canvas:hover {
+      cursor: pointer;
+    }
     #about {
       display: flex;
       align-items: center;

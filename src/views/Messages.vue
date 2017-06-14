@@ -16,7 +16,7 @@
         Like what you hear? Download our FREE app,
         now available on iTunes and Google Play
       </div>
-      <a class="button">Click to Download</a>
+      <a href="App.vue" class="button">Click to Download</a>
     </div>
 
   </div>
