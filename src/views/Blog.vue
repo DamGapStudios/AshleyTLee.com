@@ -1,6 +1,6 @@
 <template>
   <div id="blog">
-    <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/AshleyTLee_Website_Blog.png" style="width: 100%" class="med-up"/>
+    <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/AshleyTLee_BlogHeader.png" style="width: 100%" class="med-up"/>
 
     <div class="header small">
 

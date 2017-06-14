@@ -131,7 +131,7 @@
       fabric.Image.fromURL('http://www.ashleytlee.com/wp-content/uploads/2017/06/canvas_pencilholder.png', function (holder) {
         holder.setLeft(750);
         holder.setTop(230);
-          holder.hasControls = false;
+          holder.hasControls = true;
           holder.hasBorders = false;
           holder.lockMovementX = holder.lockMovementY = true;
           holder.on('mouseup', holderClick);
