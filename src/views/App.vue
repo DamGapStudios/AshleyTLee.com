@@ -124,6 +124,13 @@
                   sermon_audio: 'https://www.dropbox.com/s/9uhuue7pqv5hwve/Roller%20Coaster.mp3?dl=1',
                   image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/RollerCoaster.jpg'
               },
+              {
+                  title: {
+                      rendered: 'Secret Heart.mp3'
+                  },
+                  sermon_audio: 'https://www.dropbox.com/s/p2cdfseahgu4xeo/Secret%20Heart.mp3?dl=0',
+                  image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/SeceretHeart.jpg'
+              },
           ]
       }
     }
