@@ -9,7 +9,7 @@
     </div>
 
     <div class="blogCard">
-      <!--<img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/0.png" class="blog_banner large"/>-->
+      <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/blog_banner.jpg" class="blog_banner large"/>
       <div class="blogSection">
         <div class="blogs">
           <blog-post v-for="post in blog_posts" :post="post" class="blogContent"></blog-post>
