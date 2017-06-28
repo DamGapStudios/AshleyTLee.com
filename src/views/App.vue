@@ -128,7 +128,7 @@
                   title: {
                       rendered: 'Secret Heart.mp3'
                   },
-                  sermon_audio: 'https://www.dropbox.com/s/p2cdfseahgu4xeo/Secret%20Heart.mp3?dl=0',
+                  sermon_audio: 'https://www.dropbox.com/s/p2cdfseahgu4xeo/Secret%20Heart.mp3?dl=1',
                   image: 'http://www.ashleytlee.com/wp-content/uploads/2017/06/SeceretHeart.jpg'
               },
           ]
