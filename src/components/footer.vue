@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-text">Copyright © {{ year }} |  Ashley T Lee Ministries</div>
-    <div class="footer-text">Site Created By &nbsp; <a href="http://www.longlivesimeple.com"> Live Long Simple </a> &nbsp; & &nbsp; <a href="http://www.damgapstudios.com"> DamGap Studios </a></div>
+    <div class="footer-text">Site Created By &nbsp; <a href="http://www.longlivesimeple.com"> Long Live Simple </a> &nbsp; & &nbsp; <a href="http://www.damgapstudios.com"> DamGap Studios </a></div>
     <div class="footer-text">
       <nav-giving class="social"></nav-giving>
       <router-link to="/giving" class="social extra">Giving</router-link>
