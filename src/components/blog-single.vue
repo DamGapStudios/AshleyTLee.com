@@ -1,7 +1,7 @@
 <template>
     <div id="blog-single">
         <div class="title">{{ post.title.rendered }}</div>
-        <div class="author">By {{ author.name }}</div>
+        <!--<div class="author">By {{ author.name }}</div>-->
         <div class="post" v-html="post.content.rendered"></div>
     </div>
 </template>
