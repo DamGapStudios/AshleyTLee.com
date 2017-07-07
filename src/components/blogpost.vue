@@ -1,5 +1,7 @@
 <template>
     <div class="blog">
+        <div class="FeatImage"><img v-bind:src="post.better_featured_image.media_details.sizes.medium_large.source_url" v-bind:alt="post.better_featured_image.description" style="width: 75%"/></div>
+        <!--<div class="FeatImage">{{ post.better_featured_image.media_details.sizes.medium.source_url }}</div>-->
         <div class="title">{{ toDate(post.date) }} | {{ post.title.rendered }}</div>
         <div class="content" v-html="post.excerpt.rendered"></div>
         <router-link :to="'/blogpage/' + post.id" class="readMore" >Read More</router-link>
@@ -12,6 +14,7 @@
         props: ['post'],
         created () {
             console.log(this.post)
+            console.log(this.post.better_featured_image.media_details.sizes.medium.source_url)
         },
         methods: {
             toDate: function (date) {
