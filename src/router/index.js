@@ -46,7 +46,7 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/blogpage',
+      path: '/blog',
       name: 'Blog',
       component: Blog
     },
