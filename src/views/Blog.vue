@@ -9,6 +9,7 @@
     </div>
 
     <div class="blogCard">
+    <div class="blogCard">
       <img src="http://www.ashleytlee.com/wp-content/uploads/2017/06/blog_banner.jpg" class="blog_banner large"/>
       <div class="blogSection">
         <div class="blogs">
