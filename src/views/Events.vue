@@ -2,8 +2,11 @@
   <div id="template" class="top-more">
     <h1 class="ashley-blue-text"><nav-events class="body-icon"></nav-events>{{title}}</h1>
     <p class="sides" >{{intro}}</p>
-    <full-calendar :events="eventSet" locale="en"></full-calendar>
-  </div>
+    <!--<full-calendar :events="eventSet" locale="en"></full-calendar>-->
+    <div class="sides">
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ashleylee4%40gmail.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -46,5 +49,12 @@
   .sides {
     margin: 0 5%;
     text-align: center;
+  }
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
   }
 </style>

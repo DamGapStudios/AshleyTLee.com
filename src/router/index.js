@@ -26,7 +26,7 @@ export default new Router({
       component: About
     },
     {
-      path: '/messagePage',
+      path: '/messages',
       name: 'Messages',
       component: Messages
     },
@@ -56,7 +56,7 @@ export default new Router({
       component: Giving
     },
       {
-      path: '/blogpage/:id',
+      path: '/blog/:id',
       name: 'Posts',
       component: Posts
     }

@@ -8,11 +8,11 @@
       <div class="toolbar-container">
         <router-link to="/" class="toolbar-link" tag="div" exact><nav-home class="toolbar-icon"></nav-home>Home</router-link>
         <router-link to="/about" class="toolbar-link" tag="div" exact><nav-about class="toolbar-icon"></nav-about>About</router-link>
-        <router-link to="/messagePage" class="toolbar-link" tag="div" exact><nav-messages class="toolbar-icon"></nav-messages>Messages</router-link>
+        <router-link to="/messages" class="toolbar-link" tag="div" exact><nav-messages class="toolbar-icon"></nav-messages>Messages</router-link>
         <router-link to="/app" class="toolbar-link" tag="div" exact><nav-app class="toolbar-icon"></nav-app>App</router-link>
         <router-link to="/events" class="toolbar-link" tag="div" exact><nav-events class="toolbar-icon"></nav-events>Events</router-link>
         <router-link to="/contact" class="toolbar-link" tag="div" exact><nav-contact class="toolbar-icon"></nav-contact>Contact</router-link>
-        <router-link to="/blogpage" class="toolbar-link" tag="div" exact><nav-blog class="toolbar-icon"></nav-blog>Blog</router-link>
+        <router-link to="/blog" class="toolbar-link" tag="div" exact><nav-blog class="toolbar-icon"></nav-blog>Blog</router-link>
           <!--<router-link to="/giving" class="toolbar-link" tag="div" exact><nav-giving class="toolbar-icon"></nav-giving>Giving</router-link>-->
         <!--<router-link  v-for="link in this.links" :key="link.name" class="toolbar-link" :to="link.path" tag="div" exact>{{ link.name }}</router-link>-->
         <!--<social-giving class="social"></social-giving>-->
@@ -89,7 +89,7 @@
                   name: 'About'
               },
               {
-                  path: '/messagePage',
+                  path: '/messages',
                   name: 'Messages'
               },
               {
@@ -105,7 +105,7 @@
                   name: 'Contact'
               },
               {
-                  path: '/blogpage',
+                  path: '/blog',
                   name: 'Blog'
               }
           ]

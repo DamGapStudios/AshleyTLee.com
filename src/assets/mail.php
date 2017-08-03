@@ -42,10 +42,10 @@
 $email = $_POST['email'];
 $message = $_POST['message'];
 $formcontent="From: $name \n Message: $message";
-$recipient = "adunham95@gmail.com";
+$recipient = "ashley@ashleytlee.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-header("Location: http://ashleytlee.dev"); /* Redirect browser */
+header("Location: http://ashleytlee.com"); /* Redirect browser */
 exit();
 ?>
