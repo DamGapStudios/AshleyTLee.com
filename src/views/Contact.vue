@@ -3,7 +3,7 @@
 
     <h1 class="ashley-blue-text"><nav-contact class="body-icon"></nav-contact>{{title}}</h1>
 
-    <form action="/wp-content/themes/AshleyTLeeTheme/dist/mail.php" method="POST" id="contactCard">
+    <form action="https://formspree.io/ashley@ashleytlee.com" method="POST" id="contactCard">
       Email us at <a href="mailto:ashley@ashleytlee.com" style="color: white;background-color: transparent;padding:0;margin:0;min-width: 0;">ashley@ashleytlee.com</a> or fill out the fields below and we will be in touch.
       <div class="contact-container">
         <div class="input-contact">
