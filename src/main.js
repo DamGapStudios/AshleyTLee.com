@@ -13,11 +13,11 @@ Vue.use(Resource);
 // Vue.prototype.$http = axios;
 //Use vue route
 
-Vue.use( Vuex )
-Vue.use( VueRouter )
+Vue.use( Vuex );
+Vue.use( VueRouter );
 Vue.use(VueProgressiveImage, {
 	removePreview: true
-})
+});
 
 Vue.config.debug = true;
 Vue.config.devTools = true;
@@ -28,5 +28,5 @@ new Vue({
     router,
     template: '<App/>',
     components: { App }
-})
+});
 
